@@ -1,0 +1,12 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+#header {
+    text-align: center;
+}
+
+.navbar {
+    background-color: #905BAD;
+    /* CD83E4 */
+}
