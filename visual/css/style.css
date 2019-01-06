@@ -2,11 +2,17 @@
     font-family: 'Raleway', sans-serif;
 }
 
-#header {
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
 }
 
-.navbar {
-    background-color: #905BAD;
-    /* CD83E4 */
+#intro {
+    background: url('../images/placeholder_image.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
 }
