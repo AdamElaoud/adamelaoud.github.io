@@ -44,4 +44,33 @@ a {
     font-size: 1.25rem;
     margin: 0.5rem;
     color: #FFFFFF;
+    text-decoration: none !important;
+}
+
+#game-dev-title {
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    background: url('../images/game-dev-background.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#web-dev-title {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    background: url('../images/web-dev-background.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title {
+    font-family: 'Staatliches', cursive;
+    font-size: 4rem;
 }
