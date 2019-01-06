@@ -1,5 +1,6 @@
 * {
     font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
 }
 
 body {
@@ -15,4 +16,32 @@ body {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#name {
+    font-size: 3rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    width: 45rem;
+    min-width: 25rem;
+}
+
+#navbar {
+    min-width: 35rem;
+}
+
+a {
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    color: #FFFFFF;
 }
