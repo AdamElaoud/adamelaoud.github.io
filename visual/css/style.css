@@ -1,6 +1,5 @@
 * {
     font-family: 'Raleway', sans-serif;
-    color: #FFFFFF;
 }
 
 body {
@@ -12,6 +11,7 @@ body {
 }
 
 #intro {
+    color: #FFFFFF;
     background: url('../images/placeholder_image.png') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -48,13 +48,12 @@ a {
 }
 
 #game-dev-title {
-    color: #FFFFFF;
-    -webkit-text-stroke: 1px #000000;
+    color: #FBC862;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 15rem;
-    background: url('../images/game-dev-background.png') no-repeat center;
+    background: url('../images/game-dev-background2.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -73,4 +72,16 @@ a {
 .title {
     font-family: 'Staatliches', cursive;
     font-size: 4rem;
+}
+
+#project-sync {
+    color: #000000;
+    background-color: #B58DBE;
+    text-align: left;
+    padding: 4rem;
+}
+
+iframe {
+    min-width: 512px;
+    min-height: 288px;
 }
