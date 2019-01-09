@@ -26,8 +26,8 @@ header {
 }
 
 iframe {
-    min-width: 512px;
-    min-height: 288px;
+    width: 426px;
+    height: 240px;
 }
 
 a {
@@ -51,20 +51,6 @@ a:hover {
     height: 100vh;
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
-
-.center {
-    text-align: center;
-}
-
 #name {
     font-size: 3rem;
     margin: 1rem;
@@ -81,8 +67,7 @@ a:hover {
 }
 
 #game-dev-title {
-    color: #FBC862;
-    -webkit-text-stroke: 0.15px #000000;
+    color: #EBB04A;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,19 +88,100 @@ a:hover {
     background-attachment: fixed;
 }
 
+#project-sync {
+    color: #000000;
+    background-color: #E67BFC;
+    text-align: left;
+    padding: 2rem;
+}
+
+#sync-desc {
+    background-color: #DB52F8;
+}
+
+#contact {
+    background-color: #5A5A5A;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+
+}
+
+/* --------------- High importance CLASSES ---------------*/
+.icon {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.icon-lg {
+    font-size: 3.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.gif {
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.link-group {
+    display: flex;
+    align-items: center;
+}
+
+.link-button {
+    margin-left: 1rem;
+}
+
 .title {
     font-family: 'Staatliches', cursive;
     font-size: 4rem;
 }
 
-#project-sync {
-    color: #000000;
-    background-color: #B58DBE;
-    text-align: left;
-    padding: 4rem;
+.description {
+    max-width: 25rem;
+    max-height: 25rem;
 }
 
-#footer {
-    background-color: #5A5A5A;
-    height: 5rem;
+.curved {
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.spaced {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-row-centered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
 }
