@@ -2,12 +2,45 @@
     font-family: 'Raleway', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+iframe {
+    min-width: 512px;
+    min-height: 288px;
+}
+
+a {
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
 }
 
 #intro {
@@ -18,13 +51,18 @@ body {
     height: 100vh;
 }
 
-header {
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+}
+
+.center {
+    text-align: center;
 }
 
 #name {
@@ -34,21 +72,17 @@ header {
     justify-content: flex-start;
     width: 45rem;
     min-width: 25rem;
+    text-align: left;
 }
 
 #navbar {
     min-width: 35rem;
-}
-
-a {
-    font-size: 1.25rem;
-    margin: 0.5rem;
-    color: #FFFFFF;
-    text-decoration: none !important;
+    text-align: right;
 }
 
 #game-dev-title {
     color: #FBC862;
+    -webkit-text-stroke: 0.15px #000000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +115,7 @@ a {
     padding: 4rem;
 }
 
-iframe {
-    min-width: 512px;
-    min-height: 288px;
+#footer {
+    background-color: #5A5A5A;
+    height: 5rem;
 }
