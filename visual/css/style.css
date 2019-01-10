@@ -15,6 +15,9 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -28,14 +31,23 @@ header {
 a {
     font-size: 1.25rem;
     margin: 0.5rem;
-    color: #FFFFFF;
+    color: #000000;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-    color: #000000;
+    color: #FFFFFF;
     text-decoration: none;
+}
+
+video {
+    border-radius: 1rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: #000000 !important;
 }
 
 #intro {
@@ -54,11 +66,6 @@ a:hover {
     width: 45rem;
     min-width: 25rem;
     text-align: left;
-}
-
-#navbar {
-    min-width: 35rem;
-    text-align: right;
 }
 
 #game-dev-title {
@@ -93,6 +100,7 @@ a:hover {
 #sync-desc {
     background-color: #DB52F8;
     padding: 1rem;
+    min-width: 25rem;
 }
 
 #sync-btn {
@@ -112,11 +120,17 @@ a:hover {
 
 }
 
+#arrow {
+    height: 3rem;
+    width: 3rem;
+}
+
 /* --------------- High importance CLASSES ---------------*/
 .icon {
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    color: #FFFFFF;
 }
 
 .icon-lg {
@@ -177,6 +191,16 @@ a:hover {
     align-items: center;
 }
 
+.align-items-center {
+    display: flex;
+    align-items:center;
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
 .flex-row-centered {
     display: flex;
     flex-direction: row;
@@ -193,4 +217,20 @@ a:hover {
 
 .left-text {
     text-align: left;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
 }

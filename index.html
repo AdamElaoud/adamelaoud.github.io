@@ -22,20 +22,22 @@
     </head>
 
     <body>
-        <!-- Intro -->
-        <div id = "intro">
-            <!-- Header -->
-            <header>
-                <p id = "name">Adam Elaoud</p>
+        <!-- NavBar -->
+        <nav class = "navbar">
+            <a class = "navbar-brand" href = "#">Adam Elaoud</a>
+            <form>
+                <a href = "">ABOUT</a>
+                <a href = "#game-dev-title">GAME DEV</a>
+                <a href = "#web-dev-title">WEB DEV</a>
+                <a href = "#contact">CONTACT</a>
+            </form>
+        </nav>
 
-                <!-- NavBar -->
-                <nav id = "navbar">
-                    <a href = "">ABOUT</a>
-                    <a href = "#game-dev-title">GAME DEV</a>
-                    <a href = "#web-dev-title">WEB DEV</a>
-                    <a href = "#contact">CONTACT</a>
-                </nav>
-            </header>
+        <!-- Intro -->
+        <div id = "intro" class = "flex-column-centered">
+            <div id = "arrow" class = "bounce">
+                <a href = ""><i class = "fas fa-angle-down"></i></a>
+            </div>
         </div>
 
         <!-- Game Development Title -->
@@ -50,16 +52,12 @@
                             <div class = "spaced flex-column-centered">
                                 <h1>Project Sync</h1>
                                 <p>Ongoing project</p>
-                                <video class = "curved" src = "visual/videos/project_sync_showcase.mp4" controls width = "360" height = "270"></video>
+                                <video src = "visual/videos/project_sync_showcase.mp4" controls width = "360" height = "270"></video>
                                 <br>
-                                <div class = "spaced flex-row-centered">
-                                    <div class = "spaced flex-column-centered">
-                                        <p class = "text-center">Element concept art</p>
-                                        <div class = "spaced flex-row-centered">
-                                            <img class = "gif" src = "visual/images/fire-animation.gif">
-                                            <img class = "gif" src = "visual/images/time-animation.gif">
-                                        </div>
-                                    </div>
+                                <p>Element concept art</p>
+                                <div class = "flex-row-centered">
+                                    <img class = "gif" src = "visual/images/fire-animation.gif">
+                                    <img class = "gif" src = "visual/images/time-animation.gif">
                                 </div>
                             </div>
 
