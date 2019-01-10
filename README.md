@@ -1,2 +1,2 @@
 # adamelaoud.github.io
-Currently under construction. Setting up custom URL and getting assets prepared.
+Currently under construction. Feel free to take a look under the hood in the meantime, haha.

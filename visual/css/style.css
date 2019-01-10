@@ -25,7 +25,7 @@ header {
     margin-right: 3rem;
 }
 
-iframe {
+iframe, video {
     width: 426px;
     height: 240px;
 }
@@ -97,6 +97,16 @@ a:hover {
 
 #sync-desc {
     background-color: #DB52F8;
+}
+
+#sync-btn {
+    background-color: #CB2AED;
+    font-weight: bold;
+    transition: all .2s;
+}
+
+#sync-btn:hover {
+    transform: scale(1.2);
 }
 
 #contact {
@@ -184,4 +194,8 @@ a:hover {
 
 .right-text {
     text-align: right;
+}
+
+.left-text {
+    text-align: left;
 }
