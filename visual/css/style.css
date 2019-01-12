@@ -50,6 +50,10 @@ video {
     color: #000000 !important;
 }
 
+.navbar {
+    background: transparent;
+}
+
 #intro {
     color: #FFFFFF;
     background: url('../images/placeholder_image.png') no-repeat center;
@@ -101,6 +105,7 @@ video {
     background-color: #DB52F8;
     padding: 1rem;
     min-width: 25rem;
+    max-width: 50rem;
 }
 
 #sync-btn {
@@ -159,11 +164,6 @@ video {
 .title {
     font-family: 'Staatliches', cursive;
     font-size: 4rem;
-}
-
-.description {
-    max-width: 25rem;
-    max-height: 25rem;
 }
 
 .curved {
