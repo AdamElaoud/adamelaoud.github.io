@@ -14,24 +14,12 @@ body {
     text-align: center;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-
 a {
+    /* top, right, bottom, left */
+    padding: .5rem .75rem .5rem .75rem;
     font-size: 1.25rem;
     margin: 0.5rem;
-    color: #000000;
+    color: #FFFFFF;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
@@ -41,13 +29,23 @@ a:hover {
     text-decoration: none;
 }
 
+.navbar-link:hover {
+    color: #FFFFFF;
+    background-color: #CB2AED;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 video {
     border-radius: 1rem;
 }
 
 .navbar-brand {
     font-size: 2rem;
-    color: #000000 !important;
+}
+
+.navbar-brand:hover {
+    background-color: none !important;
 }
 
 .navbar {
@@ -60,16 +58,6 @@ video {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-}
-
-#name {
-    font-size: 3rem;
-    margin: 1rem;
-    display: flex;
-    justify-content: flex-start;
-    width: 45rem;
-    min-width: 25rem;
-    text-align: left;
 }
 
 #game-dev-title {
@@ -109,13 +97,17 @@ video {
 }
 
 #sync-btn {
-    background-color: #CB2AED;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: #E67BFC;
+    border-color: #CB2AED;
+    border-width: thick;
     font-weight: bold;
     transition: all .2s;
 }
 
 #sync-btn:hover {
-    transform: scale(1.2);
+    background-color: #CB2AED;
+    color: #FFFFFF;
 }
 
 #contact {
@@ -126,8 +118,13 @@ video {
 }
 
 #arrow {
-    height: 3rem;
-    width: 3rem;
+    margin: auto;
+    position: relative;
+    top: 50%;
+}
+
+.fa-angle-down {
+    font-size: 3rem;
 }
 
 /* --------------- High importance CLASSES ---------------*/
@@ -168,6 +165,10 @@ video {
 
 .curved {
     border-radius: 2rem;
+}
+
+.squared {
+    border-radius: 0rem !important;
 }
 
 .spaced {
