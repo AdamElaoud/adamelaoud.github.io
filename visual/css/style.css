@@ -27,6 +27,20 @@ a:hover {
     text-decoration: none;
 }
 
+h1 {
+    font-weight: bold;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #DB52F8;
+    height: 3px;
+    width: 10rem;
+}
+
 .navbar-link {
     /* top, right, bottom, left */
     padding: .75rem 1rem .75rem 1rem;
@@ -83,13 +97,21 @@ a:hover {
 
 #project-sync {
     color: #000000;
-    background-color: #E67BFC;
+    background-color: #FFFFFF;
     text-align: left;
     padding: 2rem;
 }
 
+#sync-vid {
+    background: url('../images/pc_monitor.jpg') no-repeat center;
+    background-size: 100% 100%;
+    /* top right bottom left */
+    padding-top: 3.75%;
+    padding-bottom: 18.75%;
+}
+
 #sync-desc {
-    background-color: #DB52F8;
+    background-color: #EDEEEF;
     padding: 1rem;
     min-width: 25rem;
     max-width: 50rem;
@@ -97,10 +119,12 @@ a:hover {
 
 #sync-btn {
     padding: 0.5rem 1rem 0.5rem 1rem;
-    background-color: #E67BFC;
+    background-color: #FFFFFF;
     border-color: #CB2AED;
-    border-width: thick;
+    border-width: .2rem;
     font-weight: bold;
+    font-size: 1.25rem;
+    color: #CB2AED;
     transition: all .2s;
 }
 
@@ -111,13 +135,13 @@ a:hover {
 
 #one-shot {
     color: #000000;
-    background-color: #FFFFFF;
+    background-color: #E67BFC;
     text-align: left;
     padding: 2rem;
 }
 
 #one-shot-desc {
-    background-color: #EDEEEF;
+    background-color: #DB52F8;
     padding: 1rem;
     min-width: 25rem;
     max-width: 50rem;
@@ -125,7 +149,7 @@ a:hover {
 
 #one-shot-btn {
     padding: 0.5rem 1rem 0.5rem 1rem;
-    background-color: #FFFFFF;
+    background-color: #E67BFC;
     border-color: #000000;
     border-width: thick;
     font-weight: bold;
@@ -155,11 +179,40 @@ a:hover {
 }
 
 /* --------------- High importance CLASSES ---------------*/
+.description {
+    min-width: 25rem;
+    max-width: 35rem;
+}
+
+.ongoing {
+    font-weight: bold;
+    color: #E40101;
+}
+
+.complete {
+    color: #B2EB3F;
+}
+
+.monitor {
+    margin-bottom: 1.5rem;
+}
+
 .icon {
     font-size: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    /* top right bottom left */
+    margin: 2rem .5rem 2rem .5rem;
     color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 2rem;
+    padding: .75rem;
+    transition: all .4s ease-in-out;
+}
+
+.icon:hover {
+    color: #000000;
+    background-color: #FFFFFF;
 }
 
 .icon-lg {
@@ -229,6 +282,12 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .center-text {
