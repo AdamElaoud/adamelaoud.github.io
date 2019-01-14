@@ -103,11 +103,9 @@ h1:after {
 }
 
 #sync-vid {
-    background: url('../images/pc_monitor.jpg') no-repeat center;
-    background-size: 100% 100%;
     /* top right bottom left */
-    padding-top: 3.75%;
-    padding-bottom: 18.75%;
+    padding-top: 4.25%;
+    padding-bottom: 19.1%;
 }
 
 #sync-desc {
@@ -117,27 +115,16 @@ h1:after {
     max-width: 50rem;
 }
 
-#sync-btn {
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    background-color: #FFFFFF;
-    border-color: #CB2AED;
-    border-width: .2rem;
-    font-weight: bold;
-    font-size: 1.25rem;
-    color: #CB2AED;
-    transition: all .2s;
-}
-
-#sync-btn:hover {
-    background-color: #CB2AED;
-    color: #FFFFFF;
-}
-
 #one-shot {
-    color: #000000;
-    background-color: #E67BFC;
+    color: #FFFFFF;
+    background-color: #232429;
     text-align: left;
     padding: 2rem;
+}
+
+#one-shot-vid {
+    padding-top: 3.75%;
+    padding-bottom: 17%;
 }
 
 #one-shot-desc {
@@ -145,20 +132,6 @@ h1:after {
     padding: 1rem;
     min-width: 25rem;
     max-width: 50rem;
-}
-
-#one-shot-btn {
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    background-color: #E67BFC;
-    border-color: #000000;
-    border-width: thick;
-    font-weight: bold;
-    transition: all .2s;
-}
-
-#one-shot-btn:hover {
-    background-color: #000000;
-    color: #FFFFFF;
 }
 
 #contact {
@@ -179,6 +152,36 @@ h1:after {
 }
 
 /* --------------- High importance CLASSES ---------------*/
+.btn {
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    border-color: #CB2AED;
+    border-width: .2rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.dark-btn {
+    background-color: #232429;
+    transition: all .2s;
+    color: #CB2AED;
+}
+
+.dark-btn:hover {
+    background-color: #CB2AED;
+    color: #FFFFFF;
+}
+
+.light-btn {
+    background-color: #FFFFFF;
+    color: #CB2AED;
+    transition: all .2s;
+}
+
+.light-btn:hover {
+    background-color: #CB2AED;
+    color: #FFFFFF;
+}
+
 .description {
     min-width: 25rem;
     max-width: 35rem;
@@ -207,11 +210,11 @@ h1:after {
     background-color: #000000;
     border-radius: 2rem;
     padding: .75rem;
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .icon:hover {
-    color: #000000;
+    color: #CB2AED;
     background-color: #FFFFFF;
 }
 
@@ -300,6 +303,40 @@ h1:after {
 
 .left-text {
     text-align: left;
+}
+
+.highlight {
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 0.5rem;
+    padding: .25rem .35rem .15rem .35rem;
+    border-radius: .35rem;
+}
+
+.code {
+    background-color: #F0B1FD;
+}
+
+.design {
+    background-color: #E47CFA;
+}
+
+.bug-testing {
+    background-color: #D02AF3;
+}
+
+.balancing {
+    background-color: #C006E7;
+}
+
+.vid-black {
+    background: url('../images/pc_monitor.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+.vid-white {
+    background: url('../images/pc_monitor_white.png') no-repeat center;
+    background-size: 100% 100%;
 }
 
 @keyframes bounce {
