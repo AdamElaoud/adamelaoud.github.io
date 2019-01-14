@@ -31,14 +31,11 @@ h1 {
     font-weight: bold;
 }
 
-h1:after {
-    content: "";
-    display: block;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-color: #DB52F8;
-    height: 3px;
-    width: 10rem;
+img {
+    max-width: 5rem;
+    max-height: 5rem;
+    border-radius: 3rem;
+    margin-bottom: 0.5rem;
 }
 
 .navbar-link {
@@ -113,6 +110,16 @@ h1:after {
 
 /* ----------------------------  CLASSES ----------------------------*/
 
+.project-title:after {
+    content: "";
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #DB52F8;
+    height: 3px;
+    width: 10rem;
+}
+
 .section-title {
     display: flex;
     align-items: center;
@@ -137,11 +144,11 @@ h1:after {
 }
 
 .btn {
-    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     border-color: #CB2AED;
     border-width: .2rem;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     max-width: 9rem;
     max-height: 3.5rem;
@@ -206,8 +213,15 @@ h1:after {
     background-color: #FFFFFF;
 }
 
-.icon-lg {
-    font-size: 3.5rem;
+.icon-light-lg {
+    color: #232429;
+    font-size: 2.75rem;
+    margin-right: 0.5rem;
+}
+
+.icon-dark-lg {
+    color: #FFFFFF;
+    font-size: 2.75rem;
     margin-right: 0.5rem;
 }
 
@@ -258,6 +272,12 @@ h1:after {
     align-items: center;
 }
 
+.flex-row-centered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .align-items-center {
     display: flex;
     align-items:center;
@@ -265,12 +285,6 @@ h1:after {
 
 .justify-content-center {
     display: flex;
-    justify-content: center;
-}
-
-.flex-row-centered {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -314,6 +328,10 @@ h1:after {
 
 .balancing {
     background-color: #C006E7;
+}
+
+.java {
+    background-color: #FF0D9C;
 }
 
 .vid-black {
