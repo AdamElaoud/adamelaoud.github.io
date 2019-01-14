@@ -75,31 +75,12 @@ h1:after {
 
 #game-dev-title {
     color: #EBB04A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 15rem;
     background: url('../images/game-dev-background2.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #web-dev-title {
     color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 15rem;
     background: url('../images/web-dev-background.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#project-sync {
-    color: #000000;
-    background-color: #FFFFFF;
-    text-align: left;
-    padding: 2rem;
 }
 
 #sync-vid {
@@ -108,30 +89,9 @@ h1:after {
     padding-bottom: 19.1%;
 }
 
-#sync-desc {
-    background-color: #EDEEEF;
-    padding: 1rem;
-    min-width: 25rem;
-    max-width: 50rem;
-}
-
-#one-shot {
-    color: #FFFFFF;
-    background-color: #232429;
-    text-align: left;
-    padding: 2rem;
-}
-
 #one-shot-vid {
-    padding-top: 3.75%;
-    padding-bottom: 17%;
-}
-
-#one-shot-desc {
-    background-color: #DB52F8;
-    padding: 1rem;
-    min-width: 25rem;
-    max-width: 50rem;
+    padding-top: 3.65%;
+    padding-bottom: 17.15%;
 }
 
 #contact {
@@ -151,13 +111,40 @@ h1:after {
     font-size: 3rem;
 }
 
-/* --------------- High importance CLASSES ---------------*/
+/* ----------------------------  CLASSES ----------------------------*/
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+.light-item {
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: left;
+    padding: 2rem;
+}
+
+.dark-item {
+    color: #FFFFFF;
+    background-color: #232429;
+    text-align: left;
+    padding: 2rem;
+}
+
 .btn {
     padding: 0.75rem 1.25rem 0.75rem 1.25rem;
     border-color: #CB2AED;
     border-width: .2rem;
     font-weight: bold;
     font-size: 1.25rem;
+    letter-spacing: 1px;
+    max-width: 9rem;
+    max-height: 3.5rem;
 }
 
 .dark-btn {
@@ -193,6 +180,7 @@ h1:after {
 }
 
 .complete {
+    font-weight: bold;
     color: #B2EB3F;
 }
 
@@ -207,7 +195,7 @@ h1:after {
     /* top right bottom left */
     margin: 2rem .5rem 2rem .5rem;
     color: #FFFFFF;
-    background-color: #000000;
+    background-color: #232429;
     border-radius: 2rem;
     padding: .75rem;
     transition: all .3s ease-in-out;
@@ -220,8 +208,7 @@ h1:after {
 
 .icon-lg {
     font-size: 3.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .gif {
@@ -238,7 +225,7 @@ h1:after {
 }
 
 .link-button {
-    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .title {
