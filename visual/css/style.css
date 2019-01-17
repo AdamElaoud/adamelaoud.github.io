@@ -11,7 +11,6 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
 }
 
 a {
@@ -52,7 +51,21 @@ h1 {
 }
 
 .navbar {
-    background: transparent;
+    background-image: linear-gradient(black, transparent);
+}
+
+#about-me {
+    background-color: white;
+}
+
+#profile-pic {
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+#skills {
+    list-style-type: none;
+    min-width: 25rem;
 }
 
 #intro {
@@ -61,6 +74,7 @@ h1 {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
+    text-align: center;
 }
 
 #arrow {
@@ -123,6 +137,7 @@ h1 {
     background-color: #5A5A5A;
     color: #FFFFFF;
     font-size: 1.2rem;
+    text-align: center;
 
 }
 
@@ -368,6 +383,18 @@ h1 {
 
 .java {
     background-color: #FF0D9C;
+}
+
+.fas.fa-star {
+    color: #DB52F8;
+}
+
+.far.fa-star {
+    color: lightgray;
+}
+
+.stars {
+    float: right;
 }
 
 .vid-black {
