@@ -31,13 +31,6 @@ h1 {
     font-weight: bold;
 }
 
-img {
-    max-width: 5rem;
-    max-height: 5rem;
-    border-radius: 3rem;
-    margin-bottom: 0.5rem;
-}
-
 .navbar-link {
     /* top, right, bottom, left */
     padding: .75rem 1rem .75rem 1rem;
@@ -70,6 +63,16 @@ img {
     height: 100vh;
 }
 
+#arrow {
+    margin: auto;
+    position: relative;
+    top: 50%;
+}
+
+.fa-angle-down {
+    font-size: 3rem;
+}
+
 #game-dev-title {
     color: #EBB04A;
     background: url('../images/game-dev-background2.jpg') no-repeat center;
@@ -81,7 +84,6 @@ img {
 }
 
 #sync-vid {
-    /* top right bottom left */
     padding-top: 4.25%;
     padding-bottom: 19.1%;
 }
@@ -91,6 +93,32 @@ img {
     padding-bottom: 17.15%;
 }
 
+#yangle-vid {
+    padding-top: 3.5%;
+    padding-bottom: 16.22%;
+    position: relative;
+    z-index: 1;
+}
+
+#yangle-img {
+    position: absolute;
+    z-index: 2;
+    right: -8em;
+    bottom: -5rem;
+}
+
+#schedule-share-vid {
+    padding-top: 3.475%;
+    padding-bottom: 16.22%;
+}
+
+#schedule-share-img {
+    position: absolute;
+    z-index: 2;
+    left: -8.5rem;
+    bottom: -4rem;
+}
+
 #contact {
     background-color: #5A5A5A;
     color: #FFFFFF;
@@ -98,17 +126,24 @@ img {
 
 }
 
-#arrow {
-    margin: auto;
-    position: relative;
-    top: 50%;
-}
-
-.fa-angle-down {
-    font-size: 3rem;
-}
-
 /* ----------------------------  CLASSES ----------------------------*/
+
+
+.img-container {
+    position: relative;
+}
+
+.site-img-full {
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+.gif {
+    max-width: 5rem;
+    max-height: 5rem;
+    border-radius: 3rem;
+    margin-bottom: 0.5rem;
+}
 
 .project-title:after {
     content: "";
@@ -178,7 +213,7 @@ img {
 
 .description {
     min-width: 25rem;
-    max-width: 35rem;
+    max-width: 30rem;
 }
 
 .ongoing {
@@ -312,22 +347,23 @@ img {
     margin-right: 0.5rem;
     padding: .25rem .35rem .15rem .35rem;
     border-radius: .35rem;
-}
-
-.code {
-    background-color: #F0B1FD;
+    font-weight: bold;
 }
 
 .design {
+    background-color: #F0B1FD;
+}
+
+.art {
     background-color: #E47CFA;
 }
 
 .bug-testing {
-    background-color: #D02AF3;
+    background-color: #C54CFF;
 }
 
 .balancing {
-    background-color: #C006E7;
+    background-color: #A503C7;
 }
 
 .java {
@@ -335,12 +371,12 @@ img {
 }
 
 .vid-black {
-    background: url('../images/pc_monitor.png') no-repeat center;
+    background: url('../images/pc_monitor_new.png') no-repeat center;
     background-size: 100% 100%;
 }
 
 .vid-white {
-    background: url('../images/pc_monitor_white.png') no-repeat center;
+    background: url('../images/pc_monitor_white_new.png') no-repeat center;
     background-size: 100% 100%;
 }
 
