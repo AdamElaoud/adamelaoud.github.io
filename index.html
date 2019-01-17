@@ -1,3 +1,5 @@
+<!-- (c) Copyright Adam Elaoud 2019 -->
+
 <!DOCTYPE html>
 <html lang = "en" dir = "ltr">
     <head>
@@ -53,8 +55,8 @@
                                 <h1 class = "project-title">Project Sync</h1>
                                 <div class = "flex-row">
                                     <p class = "java highlight">Java</p>
-                                    <p class = "code highlight">Code</p>
                                     <p class = "design highlight">Design</p>
+                                    <p class = "art highlight">Art</p>
                                     <p class = "bug-testing highlight">QA</p>
                                     <p class = "balancing highlight">Balancing</p>
                                 </div>
@@ -65,9 +67,9 @@
                                         Hearthstone, Duelyst, etc. Project Sync is a trading card game that:</p>
 
                                         <span class = "flex-row align-items-center">
-                                            <span class = "flex-column">
-                                                <img src = "visual/videos/fire-animation.gif">
-                                                <img src = "visual/videos/time-animation.gif">
+                                            <span class = "flex-column-centered">
+                                                <img class = "gif" src = "visual/videos/fire-animation.gif">
+                                                <img class = "gif" src = "visual/videos/time-animation.gif">
                                             </span>
                                             <ul>
                                                 <li>is synchronusly turn-based</li>
@@ -84,7 +86,7 @@
                             <!-- Right Column -->
                             <div class = "spaced centered flex-column">
                                 <div class = "monitor">
-                                    <video id = "sync-vid" class = "vid-black" src = "visual/videos/project_sync_showcase.mp4" controls autoplay width = "450" height = "337.5"></video>
+                                    <video id = "sync-vid" class = "vid-black" src = "visual/videos/project_sync_showcase.mp4" controls autoplay loop width = "450" height = "337.5"></video>
                                 </div>
 
                                 <div class = "flex-row-centered">
@@ -112,7 +114,7 @@
                             <!-- Left Column -->
                             <div class = "spaced centered flex-column">
                                 <div class = "monitor">
-                                    <video id = "one-shot-vid" class = "vid-white" src = "visual/videos/one_shot_survival_showcase.mp4" controls autoplay width = "448" height = "302.4"></video>
+                                    <video id = "one-shot-vid" class = "vid-white" src = "visual/videos/one_shot_survival_showcase.mp4" controls autoplay loop width = "448" height = "302.4"></video>
                                 </div>
 
                                 <div class = "flex-row-centered">
@@ -128,10 +130,7 @@
                                 <h1 class = "project-title">One-Shot Survival Game</h1>
                                 <div class = "flex-row">
                                     <p class = "java highlight">Java</p>
-                                    <p class = "code highlight">Code</p>
                                     <p class = "design highlight">Design</p>
-                                    <p class = "bug-testing highlight">QA</p>
-                                    <p class = "balancing highlight">Balancing</p>
                                 </div>
                                 <p>Project Status: <span class = "complete">COMPLETE</span></p>
                                 <div class = "description">
@@ -157,6 +156,104 @@
             <h1 class = "title">Web Development</h1>
         </div>
 
+                    <!-- Yangle -->
+                    <section class = "light-item">
+                        <div class = "spaced flex-row-centered">
+                            <!-- Left Column -->
+                            <div class = "spaced flex-column">
+                                <h1 class = "project-title">Yangle</h1>
+                                <div class = "flex-row">
+                                    <p class = "java highlight">Java</p>
+                                    <p class = "design highlight">Design</p>
+                                    <p class = "art highlight">Art</p>
+                                </div>
+                                <p>Project Status: <span class = "complete">COMPLETE</span></p>
+                                <div class = "description">
+                                    <p>This site, for which my fellow teammate and I were awarded 1st place and the
+                                        People's Choice award in the first ever Cisco Intern Expo, was developed to
+                                        provide Cisco engineers with a singular, easy-to-use platform for submitting
+                                        proprietary commands to Cisco servers in order to streamline internal testing.
+                                        This site accommplished the following:</p>
+                                        <ol>
+                                            <li>accept and store testing inputs</li>
+                                            <li>parse inputs and path based on decision tree</li>
+                                            <li>allocated server space</li>
+                                            <li>perform requested test</li>
+                                        </ol>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class = "spaced centered flex-column">
+                                <div class = "img-container">
+                                    <div class = "monitor">
+                                        <video id = "yangle-vid" class = "vid-black" src = "visual/videos/Yangle_showcase.mp4" controls autoplay loop width = "508.8" height = "324"></video>
+                                    </div>
+
+                                    <img id = "yangle-img" class = "site-img-full "src = "visual/images/Yangle-Webpage-Full.png">
+                                </div>
+
+                                <div class = "flex-row-centered">
+                                    <form class = "flex-row align-items-center link-button" action = "https://github.com/AdamElaoud/Intern_Site" target  = "_blank">
+                                        <i class = "icon-light-lg fab fa-github"></i>
+                                        <input class = "light-btn btn squared" type = "submit" value = "GITHUB">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Yangle -->
+
+                    <!-- Schedule Share -->
+                    <section class = "dark-item">
+                        <div class = "spaced flex-row-centered">
+                            <!-- Left Column -->
+                            <div class = "spaced centered flex-column">
+                                <div class = "img-container">
+                                    <div class = "monitor">
+                                        <video id = "schedule-share-vid" class = "vid-white" src = "visual/videos/schedule_share_showcase.mp4" controls autoplay loop width = "508.8" height = "324"></video>
+                                    </div>
+
+                                    <img id = "schedule-share-img" class = "site-img-full" src = "visual/images/schedule_share_main_cropped2.png">
+                                </div>
+
+                                <div class = "flex-row-centered">
+                                    <form class = "flex-row align-items-center link-button" action = "https://github.com/AdamElaoud/Project_Sync" target  = "_blank">
+                                        <i class = "icon-dark-lg fab fa-github"></i>
+                                        <input class = "dark-btn btn squared" type = "submit" value = "GITHUB">
+                                    </form>
+                                    <form class = "flex-row align-items-center link-button" action = "https://docs.google.com/presentation/d/1iEd57oqsv8Kq4azZuG3UYe-Dk4ekJ_AyA347yAEGbu8/edit?usp=sharing" target  = "_blank">
+                                        <i class = "icon-dark-lg fab fa-google-drive"></i>
+                                        <input class = "dark-btn btn squared" type = "submit" value = "SLIDES">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class = "spaced flex-column">
+                                <h1 class = "project-title">Jatma</h1>
+                                <div class = "flex-row">
+                                    <p class = "java highlight">Java</p>
+                                    <p class = "design highlight">Design</p>
+                                </div>
+                                <p>Project Status: <span class = "complete">COMPLETE</span></p>
+                                <div class = "description">
+                                    <p>Just Another Team Management App (Jatma) was originally a group class project I was
+                                        assigned although, in time, it became much more. Live, for the brief period of 2 weeks,
+                                        the site offered students a platform to share their schedules with friends and aid in
+                                        planning group events. The site utilized:</p>
+                                    <ul>
+                                        <li>MariaDB (MySQL) to store user data</li>
+                                        <li>compressed JSON schedules</li>
+                                        <li>hash encrypted passwords</li>
+                                        <li>image and user data compression</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Schedule Share -->
+
         <!-- Footer -->
         <div id = "contact" class = "flex-column">
             <div>
@@ -164,7 +261,7 @@
                 <a href = "https://github.com/AdamElaoud/" target = "_blank"><i class = "icon fab fa-github"></i></a>
                 <a href = "https://medium.com/@adamelaoud" target = "_blank"><i class = "icon fab fa-medium"></i></a>
                 <a href = "mailto:elaoud.adam@gmail.com" target = "_blank"><i class = "icon fas fa-envelope"></i></a>
-                <a href = "visual/images/resume.pdf" target = "_blank"><i class = "icon fas fa-file-alt"></i></a>
+                <a href = "visual/documents/resume.pdf" target = "_blank"><i class = "icon fas fa-file-alt"></i></a>
             </div>
 
             <p>&copy Adam Elaoud 2019</p>
