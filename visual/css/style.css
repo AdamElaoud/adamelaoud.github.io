@@ -88,13 +88,13 @@ h1 {
 }
 
 #game-dev-title {
-    color: #EBB04A;
-    background: url('../images/game-dev-background2.jpg') no-repeat center;
+    color: #000000;
+    background: url('../images/section-divider.png') no-repeat center;
 }
 
 #web-dev-title {
-    color: #000000;
-    background: url('../images/web-dev-background.jpg') no-repeat center;
+    color: #FFFFFF;
+    background: url('../images/section-divider.png') no-repeat center;
 }
 
 #sync-vid {
@@ -143,6 +143,19 @@ h1 {
 
 /* ----------------------------  CLASSES ----------------------------*/
 
+.skills-item {
+    transition: all .4s;
+}
+
+.skills-item:hover {
+    /* background-color: #DCDCDC; */
+    background-image: linear-gradient(to left, transparent, #DCDCDC);
+    transform: scale(1.1);
+}
+
+.bold {
+    font-weight: bold;
+}
 
 .img-container {
     position: relative;
