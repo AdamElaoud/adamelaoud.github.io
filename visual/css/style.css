@@ -66,6 +66,8 @@ h1 {
 #skills {
     list-style-type: none;
     min-width: 25rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 #intro {
@@ -88,7 +90,7 @@ h1 {
 }
 
 #game-dev-title {
-    color: #000000;
+    color: #FFFFFF;
     background: url('../images/section-divider.png') no-repeat center;
 }
 
