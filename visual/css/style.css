@@ -320,7 +320,7 @@ h1 {
     background-color: #FFFFFF;
 }
 
-.ad {
+.about-icon {
     margin: 2rem .5rem 0.3rem .5rem;
 }
 
@@ -333,7 +333,7 @@ h1 {
     transition: all .2s ease-in-out;
 }
 
-.ad:hover ~ .ad-desc {
+.about-icon:hover ~ .ad-desc {
     font-weight: bold;
     color: #CB2AED;
 }
