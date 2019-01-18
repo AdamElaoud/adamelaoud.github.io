@@ -199,6 +199,7 @@ h1 {
     right: -33rem;
     top: -14.5rem;
     z-index: 5;
+    max-width: 5rem;
 }
 
 .full-view-left {
@@ -208,6 +209,7 @@ h1 {
     left: -6.5rem;
     top: -15.5rem;
     z-index: 5;
+    max-width: 5rem;
 }
 
 .skills-item {
