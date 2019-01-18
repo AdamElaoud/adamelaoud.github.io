@@ -307,7 +307,7 @@ h1 {
     width: 3.5rem;
     height: 3.5rem;
     /* top right bottom left */
-    margin: 2rem .5rem 2rem .5rem;
+    margin: 2rem .5rem 0.3rem .5rem;
     color: #FFFFFF;
     background-color: #232429;
     border-radius: 2rem;
