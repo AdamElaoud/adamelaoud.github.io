@@ -56,11 +56,35 @@ h1 {
 
 #about-me {
     background-color: white;
+    padding: 2rem;
+}
+
+#about-details {
+    margin-bottom: 1rem;
 }
 
 #profile-pic {
     max-width: 20rem;
     max-height: 20rem;
+}
+
+#about-description {
+    font-size: 1.2rem;
+    max-width: 30rem;
+}
+
+#personal-ad {
+    background-color: #293347;
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 1.2rem;
+    margin-bottom: 0rem;
+    font-size: 1.2rem;
+}
+
+#skills-title {
+    float: left;
+    margin-bottom: 2rem;
 }
 
 #skills {
@@ -146,7 +170,8 @@ h1 {
 /* ----------------------------  CLASSES ----------------------------*/
 
 .skills-item {
-    transition: all .4s;
+    transition: all .3s;
+    font-size: 1.2rem;
 }
 
 .skills-item:hover {
@@ -274,6 +299,23 @@ h1 {
 }
 
 .icon:hover {
+    color: #CB2AED;
+    background-color: #FFFFFF;
+}
+
+.ad-icon {
+    font-size: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 2rem .5rem 4rem .5rem;
+    color: #FFFFFF;
+    background-color: #232429;
+    border-radius: 2rem;
+    padding: .75rem;
+    transition: all .3s ease-in-out;
+}
+
+.ad-icon:hover {
     color: #CB2AED;
     background-color: #FFFFFF;
 }

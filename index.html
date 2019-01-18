@@ -30,7 +30,7 @@
             <nav class = "navbar">
                 <a class = "navbar-brand" href = "#">Adam Elaoud</a>
                 <form>
-                    <a class = "navbar-link" href = "#">ABOUT</a>
+                    <a class = "navbar-link" href = "#about-me">ABOUT</a>
                     <a class = "navbar-link" href = "#game-dev-title">GAME DEV</a>
                     <a class = "navbar-link" href = "#web-dev-title">WEB DEV</a>
                     <a class = "navbar-link" href = "#contact">CONTACT</a>
@@ -44,13 +44,26 @@
 
         <!-- About Me -->
         <div id = "about-me" class = "flex-column-centered">
-            <h1 class = "project-title">About Me</h1>
-            <div class = "flex-row">
+            <div id = "about-details" class = "flex-row">
                 <img id = "profile-pic" src = "visual/images/avatar_purple.png">
-                <p class = "align-items-center">Hi There! I'm Adam</p>
+                <p id = "about-description" class = "align-items-center">Hi There! I'm Adam and I love Game and
+                    Web Development. I'm an extremely passionate developer eager for my next opportunity to learn.
+                </p>
             </div>
 
+            <p id = "personal-ad" class = "center-text">Like what you see? Let's get in contact! I'll buy the coffee.</p>
+            <div class = "center-text">
+                <a href = "https://linkedin.com/in/adamelaoud/" target  = "_blank"><i class = "ad-icon fab fa-linkedin"></i></a>
+                <a href = "https://github.com/AdamElaoud/" target = "_blank"><i class = "ad-icon fab fa-github"></i></a>
+                <a href = "https://medium.com/@adamelaoud" target = "_blank"><i class = "ad-icon fab fa-medium"></i></a>
+                <a href = "mailto:elaoud.adam@gmail.com" target = "_blank"><i class = "ad-icon fas fa-envelope"></i></a>
+                <a href = "visual/documents/resume.pdf" target = "_blank"><i class = "ad-icon fas fa-file-alt"></i></a>
+            </div>
+
+            <h1 id = "skills-title" class = "project-title">Skills</h1>
+
             <div class = "flex-row-centered">
+                <!-- Left Column -->
                 <div class = "flex-column">
                     <ul id = "skills">
                         <li class = "skills-item">
@@ -103,6 +116,7 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Right Column -->
                 <div class = "flex=column">
                     <ul id = "skills">
                         <li class = "skills-item">
@@ -380,7 +394,7 @@
                 <a href = "visual/documents/resume.pdf" target = "_blank"><i class = "icon fas fa-file-alt"></i></a>
             </div>
 
-            <p>&copy Adam Elaoud 2019</p>
+            <p><i>Handcrafted with love</i><br>&copy Adam Elaoud 2019</p>
         </div>
 
         <script type = "text/javascript" src = "javascript/index.js"></script>
