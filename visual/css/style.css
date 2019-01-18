@@ -110,6 +110,7 @@ h1 {
 #skills-title {
     float: left;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 #skills {
@@ -344,14 +345,10 @@ h1 {
     transition: all .2s ease-in-out;
 }
 
-.ad-icon:hover ~ .ad-desc {
+/* .ad-icon:hover ~ .ad-desc {
     font-weight: bold;
     color: #CB2AED;
-}
-
-.ad-item {
-    margin-bottom: 2rem;
-}
+} */
 
 .icon-light-lg {
     color: #232429;
