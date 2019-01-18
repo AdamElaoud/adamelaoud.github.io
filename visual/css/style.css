@@ -192,6 +192,24 @@ h1 {
 
 /* ----------------------------  CLASSES ----------------------------*/
 
+.full-view-right {
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    right: -33rem;
+    top: -14.5rem;
+    z-index: 5;
+}
+
+.full-view-left {
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    left: -6.5rem;
+    top: -15.5rem;
+    z-index: 5;
+}
+
 .skills-item {
     transition: all .3s;
     font-size: 1.2rem;
@@ -203,8 +221,12 @@ h1 {
     transform: scale(1.1);
 }
 
-.bold {
+.semi-bold {
     font-weight: 590;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .bold-purple {
