@@ -1,5 +1,6 @@
 * {
     font-family: 'Raleway', sans-serif;
+    font-weight: normal;
 }
 
 html {
@@ -62,6 +63,16 @@ h1 {
     background-attachment: fixed;
     height: 100vh;
     text-align: center;
+}
+
+#intro-icons {
+    position: relative;
+    top: 15rem;
+}
+
+#pulse-icon {
+    margin-right: 50rem;
+    animation: heartBeat 5s infinite linear;
 }
 
 #arrow {
@@ -171,7 +182,12 @@ h1 {
     color: #FFFFFF;
     font-size: 1.2rem;
     text-align: center;
+}
 
+#handcrafted {
+    font-size: .85rem;
+    font-style: italic;
+    margin-bottom: none;
 }
 
 /* ----------------------------  CLASSES ----------------------------*/
@@ -324,6 +340,19 @@ h1 {
     margin: 2rem .5rem 0.3rem .5rem;
 }
 
+.anim-icon {
+    font-size: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: #FFFFFF;
+    background-color: #232429;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.rot-icon {
+    position: relative;
+}
 
 .ad-desc {
     font-size: 1rem;
@@ -454,11 +483,47 @@ h1 {
 }
 
 .balancing {
-    background-color: #A503C7;
+    background-color: #B221FF;
 }
 
 .java {
     background-color: #FF0D9C;
+}
+
+.html {
+    background-color: #FF57B9;
+}
+
+.php {
+    background-color: #FF94D3;
+}
+
+.python {
+    background-color: #E849A6;
+}
+
+.css {
+    background-color: #91BDFE;
+}
+
+.sql {
+    background-color: #E849A6;
+}
+
+.javascript {
+    background-color: #3D8AFF;
+}
+
+.jquery {
+    background-color: #0F66C8;
+}
+
+.frontend {
+    background-color: #2565BF;
+}
+
+.backend {
+    background-color: #FA98D1;
 }
 
 .fas.fa-star {
@@ -499,19 +564,39 @@ h1 {
     animation: bounce 2s infinite;
 }
 
-@keyframes rotate {
+@keyframes rotate-down {
 	from {
 		transform: rotate(0deg)
-		           translate(-50px)
+		           translate(-75px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(-50px)
+		           translate(-75px)
 		           rotate(-360deg);
 	}
 }
 
-.rotate-icon {
-    animation: rotate 2s infinite linear;
+.rotate-down {
+    animation: rotate-down 2.5s infinite linear;
+    z-index: 1;
+}
+
+@keyframes rotate-up {
+	from {
+		transform: rotate(0deg)
+		           translate(75px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(75px)
+		           rotate(-360deg);
+	}
+}
+
+.rotate-up {
+    animation: rotate-up 2.5s infinite linear;
+    z-index: 2;
+    right: 4rem;
 }

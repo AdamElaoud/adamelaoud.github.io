@@ -15,9 +15,11 @@
         <!-- Stylesheet -->
         <link rel = "stylesheet" href = "visual/css/style.css">
 
+        <!-- Animate.css -->
+        <link rel = "stylesheet" href = "visual/css/animate.css">
+
         <!-- Google Fonts -->
-        <link href = "https://fonts.googleapis.com/css?family=Raleway" rel = "stylesheet">
-        <link href = "https://fonts.googleapis.com/css?family=Staatliches" rel = "stylesheet">
+        <link href = "https://fonts.googleapis.com/css?family=Raleway|Staatliches" rel = "stylesheet">
 
         <!-- Favicon -->
         <link rel = "icon" href = "visual/images/ae-icon-thick.png">
@@ -37,8 +39,11 @@
                 </form>
             </nav>
 
-            <i class = "rotate-icon icon fas fa-gamepad"></i>
-            <i class = "rotate-icon icon fas fa-laptop"></i>
+            <div id = "intro-icons" class = "flex-row-centered">
+                <i id = "pulse-icon" class = "anim-icon align-items-center justify-content-center fas fa-file-alt"></i>
+                <i class = "anim-icon rotate-down rot-icon align-items-center justify-content-center fas fa-gamepad"></i>
+                <i class = "anim-icon rotate-up rot-icon align-items-center justify-content-center fas fa-laptop"></i>
+            </div>
 
             <div id = "arrow" class = "bounce">
                 <a href = "#contact"><i class = "fas fa-angle-down"></i></a>
@@ -332,7 +337,10 @@
                             <div class = "spaced flex-column">
                                 <h1 class = "project-title">Yangle</h1>
                                 <div class = "flex-row">
-                                    <p class = "java highlight">Java</p>
+                                    <p class = "css highlight">CSS</p>
+                                    <p class = "javascript highlight">JavaScript</p>
+                                    <p class = "html highlight">HTML</p>
+                                    <p class = "python highlight">Python</p>
                                     <p class = "design highlight">Design</p>
                                     <p class = "art highlight">Art</p>
                                 </div>
@@ -388,7 +396,7 @@
 
                                 <div class = "flex-row-centered">
                                     <form class = "flex-row align-items-center link-button" action = "https://github.com/AdamElaoud/Project_Sync" target  = "_blank">
-  = "                                   <i class = "icon-dark-lg fab fa-github"></i>
+                                        <i class = "icon-dark-lg fab fa-github"></i>
                                         <input class = "dark-btn btn squared" type = "submit" value = "GITHUB">
                                     </form>
                                     <form class = "flex-row align-items-center link-button" action = "https://docs.google.com/presentation/d/1iEd57oqsv8Kq4azZuG3UYe-Dk4ekJ_AyA347yAEGbu8/edit?usp=sharing" target  = "_blank">
@@ -402,8 +410,11 @@
                             <div class = "spaced flex-column">
                                 <h1 class = "project-title">Jatma</h1>
                                 <div class = "flex-row">
-                                    <p class = "java highlight">Java</p>
-                                    <p class = "design highlight">Design</p>
+                                    <p class = "php highlight">PHP</p>
+                                    <p class = "html highlight">HTML</p>
+                                    <p class = "sql highlight">MySQL</p>
+                                    <p class = "javascript highlight">JavaScript</p>
+                                    <p class = "jquery highlight">JQuery</p>
                                 </div>
                                 <p>Project Status: <span class = "complete">COMPLETE</span></p>
                                 <div class = "description">
@@ -434,7 +445,7 @@
                 <a href = "tel:+14102001981" target = "_blank"><i class = "icon fas fa-phone-volume"></i></a>
             </div>
 
-            <p><em>Handcrafted with love</em><br>&copy Adam Elaoud 2019</p>
+            <p><span id = "handcrafted">Handcrafted with love</span><br>&copy Adam Elaoud 2019</p>
         </div>
 
         <script type = "text/javascript" src = "javascript/index.js"></script>
