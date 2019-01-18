@@ -34,6 +34,7 @@ h1 {
     /* top, right, bottom, left */
     padding: .75rem 1rem .75rem 1rem;
     margin: .25rem;
+    border-radius: 10px;
 }
 
 .navbar-link:hover {
