@@ -16,7 +16,7 @@ $(document).ready(function(){
             // num specifies time to scroll (milliseconds)
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 1000, function(){
+            }, 1200, function(){
 
                 // restore hash to URL when done scrolling
                 window.location.hash = hash;

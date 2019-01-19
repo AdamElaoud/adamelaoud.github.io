@@ -197,6 +197,14 @@ h1 {
     margin-bottom: none;
 }
 
+#to-top {
+    float: right;
+}
+
+#to-top:hover {
+
+}
+
 /* ----------------------------  CLASSES ----------------------------*/
 
 .full-view-right {
@@ -204,7 +212,7 @@ h1 {
     font-size: 1.1rem;
     position: relative;
     right: -33rem;
-    top: -14.5rem;
+    top: -14.25rem;
     z-index: 5;
     max-width: 5rem;
 }
