@@ -165,6 +165,13 @@ h1 {
     bottom: -5rem;
 }
 
+#medal {
+    display: inline-block;
+    float: right;
+    height: 5rem;
+    width: 5rem;
+}
+
 #schedule-share-vid {
     padding-top: 3.475%;
     padding-bottom: 16.22%;
