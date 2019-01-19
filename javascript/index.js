@@ -1,4 +1,4 @@
-window.onload = alert("Just a heads up! This website is under construction!");
+window.onload = setTimeout(function() {alert("Just a heads up! This website is under construction!");}, 1000);
 
 // scroll Effect
 $(document).ready(function(){
