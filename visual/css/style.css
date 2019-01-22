@@ -450,6 +450,10 @@ h1 {
     margin-right: 2rem;
 }
 
+.right-push {
+    margin-right: 0.25rem;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;

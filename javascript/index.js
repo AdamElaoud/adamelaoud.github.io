@@ -1,4 +1,4 @@
-window.onload = setTimeout(function() {alert("Just a heads up! This website is under construction!");}, 1000);
+window.onload = setTimeout(function() {alert("Just a heads up! The main images will be uploaded by mid February and the mobile/tablet versions of this site are under construction.");}, 1000);
 
 // scroll Effect
 $(document).ready(function(){
