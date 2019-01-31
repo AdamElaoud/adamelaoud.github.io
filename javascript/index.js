@@ -26,15 +26,14 @@ $(document).ready(function(){
 
             // Store hash
             let hash = this.hash;
-            console.log("position: " + $(hash).offset().top + ", navbar height: " + navbar.offsetHeight);
 
             // num specifies time to scroll (milliseconds)
             $('html, body').animate({
-                scrollTop: $(hash).offset().top - navbar.offsetHeight
-            }, 1200, function(){
+                scrollTop: $(hash).offset().top
+            }, 1500, function(){
 
                 // restore hash to URL when done scrolling
-                // window.location.hash = hash;
+                window.location.hash = hash;
             });
         }
     });
