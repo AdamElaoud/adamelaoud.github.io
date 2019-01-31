@@ -19,11 +19,9 @@ a {
     margin: 0.5rem;
     color: #FFFFFF;
     text-decoration: none;
-    transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -33,27 +31,29 @@ h1 {
 
 .navbar-link {
     /* top, right, bottom, left */
-    padding: .75rem 1rem .75rem 1rem;
+    padding: 1.21rem 1rem 1.21rem 1rem;
     margin: .25rem;
-    border-radius: 10px;
+    color: #FFFFFF;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar-link:hover {
-    color: #FFFFFF;
-    background-color: #CB2AED;
+    color: #CB2AED;
+    background-color: #FFFFFF;
     text-decoration: none;
 }
 
-.navbar-brand {
-    font-size: 2rem;
-}
-
-.navbar-brand:hover {
-    background-color: none !important;
-}
-
 .navbar {
-    background-image: linear-gradient(black, transparent);
+    display: flex;
+    justify-content: center !important;
+    padding: 1rem;
+    background-color: #232429;
+}
+
+.stuck {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #intro {

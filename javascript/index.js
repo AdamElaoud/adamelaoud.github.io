@@ -1,4 +1,18 @@
+// pop-up
 window.onload = setTimeout(function() {alert("Just a heads up! The main images will be uploaded by mid February and the mobile/tablet versions of this site are under construction.");}, 1000);
+
+// sticky navbar
+window.onscroll = function() {stickyBar()};
+var navbar = document.getElementById("sticky-navbar");
+var position = navbar.offsetTop;
+
+function stickyBar() {
+    if (window.pageYOffset >= position) {
+        navbar.classList.add("stuck")
+    } else {
+        navbar.classList.remove("stuck");
+    }
+}
 
 // scroll Effect
 $(document).ready(function(){
