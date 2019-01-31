@@ -29,25 +29,35 @@ h1 {
     font-weight: bold;
 }
 
-.navbar-link {
-    /* top, right, bottom, left */
-    padding: 1.21rem 1rem 1.21rem 1rem;
-    margin: .25rem;
-    color: #FFFFFF;
-    transition: all 0.2s ease-in-out;
-}
-
-.navbar-link:hover {
-    color: #CB2AED;
-    background-color: #FFFFFF;
-    text-decoration: none;
-}
-
 .navbar {
     display: flex;
     justify-content: center !important;
-    padding: 1rem;
+    padding: 0;
     background-color: #232429;
+    z-index: 100;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.list-elem {
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.navbar-link {
+    /* top, right, bottom, left */
+    padding: 1.21rem 1rem 1.21rem 1rem;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.navbar-link:hover,
+.nav-highlight > a {
+    color: #CB2AED;
+    background-color: #FFFFFF;
+    text-decoration: none;
 }
 
 .stuck {
@@ -79,6 +89,10 @@ h1 {
     margin: auto;
     position: relative;
     top: 50%;
+}
+
+#arrow-link:hover {
+    color: #8A03A6;
 }
 
 .fa-angle-down {
@@ -197,18 +211,10 @@ h1 {
     margin-bottom: none;
 }
 
-#to-top {
-    float: right;
-}
-
-#to-top:hover {
-
-}
-
 /* ----------------------------  CLASSES ----------------------------*/
 
 .jump {
-    height: 4rem; 
+    height: 4rem;
 }
 
 .full-view-right {

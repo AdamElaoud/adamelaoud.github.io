@@ -14,6 +14,22 @@ function stickyBar() {
     }
 }
 
+// MenuSpy
+let ms = new MenuSpy(navbar, {
+    // menu selector
+    menuItemSelector: 'a[href^="#"]',
+    // CSS class for active item
+    activeClass: 'nav-highlight',
+    // amount of space between your menu and the next section to be activated.
+    threshold: navbar.offsetHeight,
+    // enable or disable browser's hash location change.
+    enableLocationHash: true,
+    // timeout to apply browser's hash location.
+    hashTimeout: 0,
+    // called every time a new menu item activates.
+    callback: null
+});
+
 // scroll Effect
 $(document).ready(function(){
     // add smooth scrolling to all links
