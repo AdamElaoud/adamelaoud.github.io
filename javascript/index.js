@@ -3,11 +3,11 @@ window.onload = setTimeout(function() {alert("Just a heads up! The main images w
 
 // sticky navbar
 window.onscroll = function() {stickyBar()};
-var navbar = document.getElementById("sticky-navbar");
-var position = navbar.offsetTop;
+let navbar = document.getElementById("sticky-navbar");
+let position = navbar.offsetTop;
 
 function stickyBar() {
-    if (window.pageYOffset >= position) {
+    if (window.pageYOffset > position) {
         navbar.classList.add("stuck")
     } else {
         navbar.classList.remove("stuck");
@@ -25,15 +25,16 @@ $(document).ready(function(){
             event.preventDefault();
 
             // Store hash
-            var hash = this.hash;
+            let hash = this.hash;
+            console.log("position: " + $(hash).offset().top + ", navbar height: " + navbar.offsetHeight);
 
             // num specifies time to scroll (milliseconds)
             $('html, body').animate({
-                scrollTop: $(hash).offset().top
+                scrollTop: $(hash).offset().top - navbar.offsetHeight
             }, 1200, function(){
 
                 // restore hash to URL when done scrolling
-                window.location.hash = hash;
+                // window.location.hash = hash;
             });
         }
     });

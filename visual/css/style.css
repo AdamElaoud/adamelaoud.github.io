@@ -207,6 +207,10 @@ h1 {
 
 /* ----------------------------  CLASSES ----------------------------*/
 
+.jump {
+    height: 4rem; 
+}
+
 .full-view-right {
     font-weight: bold;
     font-size: 1.1rem;
