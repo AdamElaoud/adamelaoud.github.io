@@ -86,9 +86,11 @@ h1 {
 }
 
 #arrow {
+    display: flex;
+    flex-direction: column;
     margin: auto;
     position: relative;
-    top: 50%;
+    top: 75%;
 }
 
 #arrow-link:hover {
