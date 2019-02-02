@@ -6,13 +6,16 @@ window.onscroll = function() {barUpdate();};
 let navbar = document.getElementById("sticky-navbar");
 let navPosition = navbar.offsetTop;
 let logo = document.getElementById("logo");
+let aboutMe = document.getElementById("about-me");
 
 function barUpdate() {
     // stuck class only set when > due to immediate shift when scrolling to about me section
     if (window.pageYOffset > navPosition) {
         navbar.classList.add("stuck");
+        aboutMe.style.marginTop = navbar.offsetHeight + "px";
     } else {
         navbar.classList.remove("stuck");
+        aboutMe.style.marginTop = "0px";
     }
 
     if (window.pageYOffset >= navPosition - 150) {
