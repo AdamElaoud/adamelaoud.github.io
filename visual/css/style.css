@@ -22,6 +22,7 @@ a {
 }
 
 a:hover {
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -33,7 +34,7 @@ h1 {
     display: flex;
     justify-content: center !important;
     padding: 0;
-    background-color: #232429;
+    background-color: #14151E;
     z-index: 100;
 }
 
@@ -88,17 +89,19 @@ h1 {
 #arrow {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    align-items: center;
     position: relative;
-    top: 75%;
-}
-
-#arrow-link:hover {
-    color: #8A03A6;
+    top: 85%;
+    max-width: 5rem;
+    margin: auto;
 }
 
 .fa-angle-down {
     font-size: 3rem;
+}
+
+#arrow-link {
+    max-width: 2rem;
 }
 
 #about-me {
