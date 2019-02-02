@@ -56,7 +56,7 @@ $(document).ready(function(){
 
             // num specifies time to scroll (milliseconds)
             $('html, body').animate({
-                scrollTop: $(hash).offset().top
+                scrollTop: $(hash).offset().top - navbar.offsetHeight
             }, 1500, function(){
 
                 // restore hash to URL when done scrolling
