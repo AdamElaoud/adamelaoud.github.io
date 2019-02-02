@@ -30,6 +30,61 @@ h1 {
     font-weight: bold;
 }
 
+#intro {
+    color: #FFFFFF;
+    background: url('../images/placeholder_image.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    text-align: center;
+}
+
+#intro-icons {
+    position: relative;
+    top: 15rem;
+}
+
+#pulse-icon {
+    margin-right: 50rem;
+    animation: heartBeat 5s infinite linear;
+}
+
+#logo {
+    max-height: 5rem;
+    max-width: 5rem;
+    border-radius: 5rem;
+    position: fixed;
+    left: 2rem;
+    top: 2rem;
+    z-index: 101;
+    transition: all 0.2s ease-in-out;
+}
+
+#logo.navbar-logo {
+    max-height: 3rem;
+    max-width: 3rem;
+    left: 1rem;
+    top: 0.4rem;
+}
+
+#arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 85%;
+    max-width: 5rem;
+    margin: auto;
+}
+
+.fa-angle-down {
+    font-size: 3rem;
+}
+
+#arrow-link {
+    max-width: 2rem;
+}
+
 .navbar {
     display: flex;
     justify-content: center !important;
@@ -65,43 +120,6 @@ h1 {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-#intro {
-    color: #FFFFFF;
-    background: url('../images/placeholder_image.png') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    text-align: center;
-}
-
-#intro-icons {
-    position: relative;
-    top: 15rem;
-}
-
-#pulse-icon {
-    margin-right: 50rem;
-    animation: heartBeat 5s infinite linear;
-}
-
-#arrow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 85%;
-    max-width: 5rem;
-    margin: auto;
-}
-
-.fa-angle-down {
-    font-size: 3rem;
-}
-
-#arrow-link {
-    max-width: 2rem;
 }
 
 #about-me {

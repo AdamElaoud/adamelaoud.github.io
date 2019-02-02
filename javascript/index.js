@@ -2,15 +2,20 @@
 window.onload = setTimeout(function() {alert("Just a heads up! The main images will be uploaded by mid February and the mobile/tablet versions of this site are under construction.");}, 1000);
 
 // sticky navbar
-window.onscroll = function() {stickyBar()};
+window.onscroll = function() {stickyBar();};
 let navbar = document.getElementById("sticky-navbar");
-let position = navbar.offsetTop;
+let navPosition = navbar.offsetTop;
+let logo = document.getElementById("logo");
 
 function stickyBar() {
-    if (window.pageYOffset > position) {
-        navbar.classList.add("stuck")
+    if (window.pageYOffset > navPosition) {
+        navbar.classList.add("stuck");
+        logo.classList.add("navbar-logo");
+    } else if(window.pageYOffset === navPosition) {
+        logo.classList.add("navbar-logo");
     } else {
         navbar.classList.remove("stuck");
+        logo.classList.remove("navbar-logo");
     }
 }
 
