@@ -56,7 +56,8 @@ $(document).ready(function(){
 
             // num specifies time to scroll (milliseconds)
             $('html, body').animate({
-                scrollTop: $(hash).offset().top - navbar.offsetHeight
+                // add distance to account for navbar and 1 additional pixel for slight overlap
+                scrollTop: $(hash).offset().top - navbar.offsetHeight + 1
             }, 1500, function(){
 
                 // restore hash to URL when done scrolling
