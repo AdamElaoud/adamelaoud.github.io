@@ -2,19 +2,22 @@
 window.onload = setTimeout(function() {alert("Just a heads up! The main images will be uploaded by mid February and the mobile/tablet versions of this site are under construction.");}, 1000);
 
 // sticky navbar
-window.onscroll = function() {stickyBar();};
+window.onscroll = function() {barUpdate();};
 let navbar = document.getElementById("sticky-navbar");
 let navPosition = navbar.offsetTop;
 let logo = document.getElementById("logo");
 
-function stickyBar() {
+function barUpdate() {
+    // stuck class only set when > due to immediate shift when scrolling to about me section
     if (window.pageYOffset > navPosition) {
         navbar.classList.add("stuck");
-        logo.classList.add("navbar-logo");
-    } else if(window.pageYOffset === navPosition) {
-        logo.classList.add("navbar-logo");
     } else {
         navbar.classList.remove("stuck");
+    }
+
+    if (window.pageYOffset >= navPosition - 150) {
+        logo.classList.add("navbar-logo");
+    } else {
         logo.classList.remove("navbar-logo");
     }
 }
