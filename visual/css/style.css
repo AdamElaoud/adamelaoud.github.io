@@ -233,6 +233,7 @@ h1 {
     color: #FFFFFF;
     font-size: 1.2rem;
     text-align: center;
+    position: relative;
 }
 
 #handcrafted {
@@ -241,7 +242,40 @@ h1 {
     margin-bottom: none;
 }
 
+#to-top {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: absolute;
+    right: 2rem;
+    bottom: 1.5rem;
+}
+
+#to-top-icon {
+    font-size: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 2rem;
+    padding: .75rem;
+    color: #CB2AED;
+    background-color: #FFFFFF;
+    transition: all .3s ease-in-out;
+}
+
+#to-top-desc {
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+#to-top-icon:hover {
+    color: #FFFFFF;
+    background-color: #CB2AED;
+    font-size: 2.25rem;
+}
+
+
 /* ----------------------------  CLASSES ----------------------------*/
+
 
 .jump {
     height: 4rem;
@@ -419,6 +453,19 @@ h1 {
     margin: 2rem .5rem 0.3rem .5rem;
 }
 
+.ad-desc {
+    font-size: 1rem;
+    font-weight: 550;
+    color: #232429;
+    margin-top: 0.5rem;
+    transition: all .2s ease-in-out;
+}
+
+.about-icon:hover ~ .ad-desc {
+    font-weight: bold;
+    color: #CB2AED;
+}
+
 .anim-icon {
     font-size: 2rem;
     width: 3.5rem;
@@ -431,19 +478,6 @@ h1 {
 
 .rot-icon {
     position: relative;
-}
-
-.ad-desc {
-    font-size: 1rem;
-    font-weight: 550;
-    color: #232429;
-    margin-top: 0.5rem;
-    transition: all .2s ease-in-out;
-}
-
-.about-icon:hover ~ .ad-desc {
-    font-weight: bold;
-    color: #CB2AED;
 }
 
 .icon-light-lg {
