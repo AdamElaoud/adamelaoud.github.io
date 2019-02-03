@@ -309,7 +309,7 @@ h1 {
 .skills-item:hover {
     /* background-color: #DCDCDC; */
     background-image: linear-gradient(to left, transparent, #DCDCDC);
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 .semi-bold {
