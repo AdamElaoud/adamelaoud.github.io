@@ -302,14 +302,14 @@ h1 {
 }
 
 .skills-item {
-    transition: all .3s;
+    transition: all .2s;
     font-size: 1.5rem;
 }
 
 .skills-item:hover {
     /* background-color: #DCDCDC; */
     background-image: linear-gradient(to left, transparent, #DCDCDC);
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .semi-bold {
