@@ -32,7 +32,7 @@ h1 {
 
 #intro {
     color: #FFFFFF;
-    background: url('../images/placeholder_image.png') no-repeat center;
+    background: url('../images/empty_desk.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -75,10 +75,12 @@ h1 {
     top: 85%;
     max-width: 5rem;
     margin: auto;
+    color: #000000;
 }
 
 .fa-angle-down {
     font-size: 3rem;
+    color: #000000;
 }
 
 #arrow-link {
