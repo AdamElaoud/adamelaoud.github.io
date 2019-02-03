@@ -205,8 +205,8 @@ h1 {
 #yangle-img {
     position: absolute;
     z-index: 2;
-    right: -8em;
-    bottom: -5rem;
+    right: -8rem;
+    bottom: -4rem;
 }
 
 #medal {
@@ -260,6 +260,7 @@ h1 {
     color: #CB2AED;
     background-color: #FFFFFF;
     transition: all .3s ease-in-out;
+    box-shadow: 0 2px 15px 0 #000000;
 }
 
 #to-top-desc {
@@ -285,8 +286,8 @@ h1 {
     font-weight: bold;
     font-size: 1.1rem;
     position: relative;
-    right: -33rem;
-    top: -14.25rem;
+    right: -37.5rem;
+    top: -15.25rem;
     z-index: 5;
     max-width: 5rem;
 }
@@ -366,6 +367,7 @@ h1 {
 }
 
 .light-item {
+    font-size: 1.15rem;
     color: #000000;
     background-color: #FFFFFF;
     text-align: left;
@@ -373,6 +375,7 @@ h1 {
 }
 
 .dark-item {
+    font-size: 1.15rem;
     color: #FFFFFF;
     background-color: #232429;
     text-align: left;
@@ -388,6 +391,7 @@ h1 {
     letter-spacing: 1px;
     max-width: 9rem;
     max-height: 3.5rem;
+    box-shadow: 0 1px 6px 0 #000000;
 }
 
 .dark-btn {
@@ -414,7 +418,8 @@ h1 {
 
 .description {
     min-width: 25rem;
-    max-width: 30rem;
+    max-width: 45rem;
+    border-radius: 1.5rem;
 }
 
 .ongoing {
@@ -441,6 +446,7 @@ h1 {
     background-color: #232429;
     border-radius: 2rem;
     padding: .75rem;
+    box-shadow: 0 2px 10px 0 #000000;
     transition: all .3s ease-in-out;
 }
 
@@ -496,6 +502,7 @@ h1 {
     width: 8rem;
     height: 8rem;
     display: block;
+    border-radius: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -521,6 +528,14 @@ h1 {
 .spaced {
     margin-left: 2rem;
     margin-right: 2rem;
+}
+
+.right-allowance {
+    margin-right: 6rem;
+}
+
+.left-allowance {
+    margin-left: 6rem;
 }
 
 .right-push {
@@ -584,6 +599,7 @@ h1 {
     padding: .25rem .35rem .15rem .35rem;
     border-radius: .35rem;
     font-weight: bold;
+    box-shadow: 0 1px 5px 0 #000000;
 }
 
 .design {

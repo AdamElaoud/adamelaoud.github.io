@@ -67,11 +67,21 @@ $(document).ready(function(){
     });
 });
 
-// // play videos upon scrolling to them using isInViewport
-// $(".video").each(function(){
-//     if ($(this).is(":in-viewport")) {
-//         $(this)[0].play();
-//     } else {
-//         $(this)[0].pause();
-//     }
-// })
+// // play videos upon scrolling to them using VisSense
+let whiteVideos = document.getElementByClassName('vid-white');
+let blackVideos = document.getElementByClassName('vid-black');
+let videos = whiteVideos.concat(blackVideos);
+
+videos.forEach(function(vid, index) {
+    VisSense.VisMon.Builder(VisSense(vid, {
+        fullyvisible: 0.75
+    }))
+    .on('fullyvisible', function() {
+        vid.play();
+    })
+    .on('hidden', function() {
+        vid.pause();
+    })
+    .build()
+    .start();
+});
