@@ -170,7 +170,7 @@ h1 {
 
 #skills {
     list-style-type: none;
-    min-width: 25rem;
+    min-width: 20rem;
     margin-left: 3rem;
     margin-right: 3rem;
 }
@@ -303,7 +303,7 @@ h1 {
 
 .skills-item {
     transition: all .3s;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .skills-item:hover {
@@ -652,6 +652,7 @@ h1 {
 
 .stars {
     float: right;
+    margin-left: 5rem;
 }
 
 .vid-black {
