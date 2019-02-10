@@ -67,7 +67,7 @@ h1 {
     top: 0.5rem;
 }
 
-#mission {
+.mission {
     position: relative;
     top: 43%;
     font-size: 2.25rem;
@@ -75,26 +75,30 @@ h1 {
     letter-spacing: 1px;
 }
 
-#mission:before {
-    content: "";
-    display: inline-block;
-    margin-top: 3.4rem;
-    background-color: #FFFFFF;
-    height: 5px;
-    width: 10rem;
-    position: absolute;
-    left: 30%;
+#mission-top {
+    margin-bottom: 0;
 }
 
-#mission:after {
+#mission-bottom:before {
     content: "";
     display: inline-block;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     background-color: #FFFFFF;
     height: 5px;
     width: 10rem;
-    position: absolute;
-    right: 29.75%;
+    position: relative;
+    left: -3rem;
+}
+
+#mission-bottom:after {
+    content: "";
+    display: inline-block;
+    margin-bottom: 2rem;
+    background-color: #FFFFFF;
+    height: 5px;
+    width: 10rem;
+    position: relative;
+    right: -3rem;
 }
 
 #arrow {
