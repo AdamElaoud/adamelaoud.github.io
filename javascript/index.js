@@ -68,9 +68,7 @@ $(document).ready(function(){
 });
 
 // // play videos upon scrolling to them using VisSense
-let whiteVideos = document.getElementByClassName('vid-white');
-let blackVideos = document.getElementByClassName('vid-black');
-let videos = whiteVideos.concat(blackVideos);
+let videos = document.querySelectorAll(".vid-white, .vid-black");
 
 videos.forEach(function(vid, index) {
     VisSense.VisMon.Builder(VisSense(vid, {
