@@ -1,5 +1,5 @@
 // pop-up
-window.onload = setTimeout(function() {alert("Just a heads up!\n- The background and profile images are TEMPORARY and will be replaced by February 8th\n- The mobile/tablet versions of this site are still under construction.");}, 1000);
+window.onload = setTimeout(function() {alert("Just a heads up!\nThe mobile/tablet versions of this site are still under construction.");}, 1000);
 
 // sticky navbar
 window.onscroll = function() {barUpdate();};
