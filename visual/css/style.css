@@ -170,6 +170,15 @@ h1 {
     padding: 2rem;
 }
 
+#phone-warning {
+    position: absolute;
+    right: 2rem;
+    background-color: #E64A4A;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+}
+
 #about-details {
     margin-bottom: 1rem;
 }
