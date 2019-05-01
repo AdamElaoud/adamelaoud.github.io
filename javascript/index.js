@@ -1,6 +1,3 @@
-// pop-up
-window.onload = setTimeout(function() {alert("Just a heads up!\nThe mobile/tablet versions of this site are still under construction.");}, 1000);
-
 // sticky navbar
 window.onscroll = function() {barUpdate();};
 let navbar = document.getElementById("sticky-navbar");
