@@ -46,6 +46,11 @@ a {
 	transition: 0.5s all ease-in-out;
 }
 
+.icon:hover {
+	color: #FFFFFF;
+	background-color: #E435FE;
+}
+
 .link-title {
 	font-weight: 550;
 	color: #FFFFFF;
