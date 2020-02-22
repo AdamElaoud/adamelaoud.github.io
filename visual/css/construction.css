@@ -82,7 +82,7 @@ a {
 
 .btn:hover, .btn:active {
 	color: #FFFFFF;
-	background-color: none;
+	background-color: transparent;
 	transition: all 0.05s ease-in-out;
 }
 
