@@ -75,14 +75,14 @@ a {
 
 .btn {
 	margin-top: 5rem;
-	background-color: #FFFFFF;
+	background-color: none;
 	border-radius: 5rem;
-	color: #9217FE;
+	color: #FFFFFF;
 }
 
 .btn:hover, .btn:active {
-	color: #FFFFFF;
-	background-color: transparent;
+	color: #9217FE;
+	background-color: #FFFFFF;
 	transition: all 0.05s ease-in-out;
 }
 
