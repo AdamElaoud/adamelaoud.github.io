@@ -1,4 +1,6 @@
 RewriteEngine on
+
+# do not apply to folders
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # check for ".html" files in current directory
