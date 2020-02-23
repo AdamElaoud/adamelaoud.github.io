@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# check for ".html" files in current directory
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# display the selected ".html" doc as usual
+RewriteRule ^(.*)$ $1.html
