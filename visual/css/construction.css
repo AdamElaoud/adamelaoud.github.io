@@ -13,6 +13,12 @@ body {
 
 a {
 	text-decoration: none !important;
+	color: #F279FF;
+}
+
+a:hover {
+	color: #F279FF;
+	text-decoration: underline !important;
 }
 
 #logo {
