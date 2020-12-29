@@ -50,14 +50,6 @@ a:hover {
 	background-color: #F63BFE;
 }
 
-.link-title {
-	font-weight: 550;
-	color: #FFFFFF;
-	margin-top: 0.5rem;
-	transition: all 0.2s ease-in-out;
-	display: inline;
-}
-
 #intro {
 	display: flex;
 	flex-direction: column;
@@ -125,10 +117,6 @@ a:hover {
 	    height: 1.85rem;
 	}
 
-	.link-title {
-	    font-size: 0.75rem;
-	}
-
 	#warning {
 		font-size: 1.25rem;
 	}
@@ -168,10 +156,6 @@ a:hover {
 	    font-size: 1.85rem;
 	    width: 2.85rem;
 	    height: 2.85rem;
-	}
-
-	.link-title {
-	    font-size: 0.75rem;
 	}
 
 	#warning {

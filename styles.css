@@ -1,0 +1,326 @@
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+
+/* Custom Global Styles ------------------------------------------------------------------------ */
+.centered-flex-row {
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+}
+
+.section-title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.section {
+    margin-top: 5rem;
+}
+
+.gradient {
+    background: rgb(83,150,230);
+    background: linear-gradient(90deg, rgba(83,150,230,1) 0%, rgba(117,47,230,1) 100%);
+}
+
+/* Navbar ------------------------------------------------------------------------ */
+.navbar {
+    position: fixed;
+    background-color: transparent;
+    width: 100vw;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+#brand {
+    color: #FFFFFF;
+    font-size: 1.35rem;
+}
+
+#logo {
+    width: 3rem;
+}
+
+.navbar-text {
+    margin-right: 2rem;
+}
+
+.icon {
+	color: #FFFFFF;
+    background-color: transparent;
+    border: #FFFFFF solid 1px;
+    border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    transition: 0.25s all ease-in-out;
+    
+    /* custom styles */
+    width: 2.85rem;
+    height: 2.85rem;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+}
+
+.icon:hover {
+	color: #7E57FF;
+	background-color: #FFFFFF;
+}
+
+#nav-icons {
+    display: none;
+}
+
+.nav-icon {
+    font-size: 1.15rem;
+    padding: 1rem;
+}
+
+/* Hero ------------------------------------------------------------------------ */
+#hero {
+    height: 100vh;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+}
+
+#slogan {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#incredible {
+    font-weight: bold;
+}
+
+#hero-icons {
+    margin-top: 2rem;
+}
+
+.hero-icon {
+    font-size: 1.75rem;
+    padding: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+/* Users ------------------------------------------------------------------------ */
+#users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#count {
+    font-family: "Ubuntu", sans-serif;
+    color: #7E57FF;
+}
+
+#companies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.company {
+    width: 4rem;
+    margin: 3rem;
+}
+
+/* Projects ------------------------------------------------------------------------ */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#categories {
+    margin-top: 3rem;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.category-icon {
+    font-size: 1.25rem;
+    color: #7E57FF; 
+    border: 2px solid rgba(126,87,255,0.5);
+    background: transparent;
+    padding: 1.75rem;
+    border-radius: 50%;
+}
+
+.category-title{
+    margin-top: 1.75rem;
+    font-weight: 600;
+}
+
+.category-title::after {
+    content: "";
+    display: block;
+    margin-top: 1rem;
+    background-color: rgb(145,153,160, 0.5);
+    height: 2px;
+    width: 15rem;
+}
+
+#project-cards {
+    margin-top: 3rem;
+}
+
+.project {
+    position: relative;
+    color: #FFFFFF;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+}
+
+.project-icon {
+    position: absolute;
+    left: 0.75rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.project-title {
+    position: absolute;
+    left: 4rem;
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 1.15rem;
+    margin-left: 12.5rem;
+}
+
+.project-date {
+    position: absolute;
+    right: 2rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Hire Card ------------------------------------------------------------------------ */
+#hire-card {
+    position: relative;
+    z-index: 1;
+    background: #141C3A;
+    color: #FFFFFF;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: -4rem;
+    width: 90vw;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#hire-me {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#interested {
+    font-size: 1.25rem;
+}
+
+#mail {
+    font-size: 1.35rem;
+    color: #FFFFFF;
+    border: 2px solid #7E57FF;
+    border-radius: 3rem;
+    background: transparent;
+    transition: 0.25s all ease-in-out;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#mail:hover {
+    background: #7E57FF;    
+}
+
+/* Footer ------------------------------------------------------------------------ */
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 9rem 4rem 4rem 4rem;
+}
+
+#footer-logo {
+    width: 5rem;
+}
+
+#name {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+#footer-links {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-icon {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+}
+
+/* PC Styles */
+@media (min-width: 769px) {
+
+}
