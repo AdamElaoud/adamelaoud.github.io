@@ -1,0 +1,18 @@
+/* August 1, 2018, Adam Elaoud - aelaoud
+
+Copyright (c) 2018 by Cisco Systems, Inc.
+All rights reserved. */
+
+
+body {
+	background-color: #E3F5FF;
+}
+
+#sub-container {
+	display: flex;
+	justify-content: center;
+}
+
+#sub-notification {
+	margin-top: 5rem;
+}

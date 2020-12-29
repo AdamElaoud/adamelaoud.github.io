@@ -1,0 +1,163 @@
+<!--
+August 1, 2018, Adam Elaoud - aelaoud
+
+Copyright (c) 2018 by Cisco Systems, Inc.
+All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+	<head>
+		<meta charset = "utf-8">
+
+		<title>Yangle | Yang Validation</title>
+
+		<!-- Bootstrap Stylesheet -->
+		<link href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel = "stylesheet"
+			integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin = "anonymous">
+
+		<!-- Google Fonts -->
+		<link href = "https://fonts.googleapis.com/css?family=PT+Sans" rel = "stylesheet">
+
+		<!-- Shared Stylesheet -->
+		<link rel = "stylesheet" href = "../static/css/style-shared.css">
+
+		<!-- Index Stylesheet -->
+		<link rel = "stylesheet" href = "../static/css/style-index.css">
+
+		<!-- Favicon -->
+		<link rel = "icon" href = "../static/images/yangle-icon-thick.png">
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<nav class = "navbar navbar-light">
+		  <a class = "navbar-brand" href = "http://yang-tester-lnx.cisco.com/">
+		    <img src = "../static/images/yangle-icon.png" width = "40" height = "40" class = "d-inline-block align-top" alt = "">
+		    <span id = "nav-title">Yangle</span>
+		  </a>
+		  <form method = "POST">
+			<button class = "btn" id = "nav-btn" type = "submit">Help</button>
+		  	<button class = "btn" id = "nav-btn" type = "submit">Sign In</button>
+		  </form>
+		</nav>
+
+		<!-- Title -->
+		<div class = "heading">
+			<img src = "../static/images/yangle-icon.png" id = "icon" alt = "Yangle Logo">
+			<span id = "title">Yangle</span>
+			<span class = "centered" id = "title-description">Yang Model<br>Validation</span>
+		</div>
+
+		<!-- Testing Mode -->
+		<div class = "centered padded container" id = "testing-mode">
+			<p class = "bold centered subsection-title">Testing Mode:</p>
+			<div class = "padded container-internals">
+				<div class = "subsection testing-mode-subsection" id = "test-sub-1" onclick = "change_bg_color(this.id, '#7171D2')">
+					<p class = "bold header">Custom</p>
+					<p class = "rounded description testing-mode-description">In <span class = "bold">Custom Mode</span>, enter any amount of and kind of CLI commands (separated by newlines) and each will be individually tested</p>
+					<div class = "rounded description left">
+						<span class = "bold example">ex.<br></span>
+						aaa server radius dynamic-author port 3000<br>
+						telemetry model-driven strict-timer<br>
+						aps group 100 unidirectional
+					</div>
+				</div>
+				<div class = "subsection testing-mode-subsection" id = "test-sub-2" onclick = "change_bg_color(this.id, '#7171D2')">
+					<p class = "bold header">Component</p>
+					<p class = "rounded description testing-mode-description">In <span class = "bold">Component Mode</span>, enter a single root CLI command and all branching commands will be individually tested</p>
+					<div class = "rounded description left">
+						<span class = "bold example">ex.<br></span>
+						aaa, bgp, etc
+					</div>
+				</div>
+			</div>
+			<!-- Submitted through Javascript in bulk -->
+			<div>
+				<input class = "rounded form-control textbox" type = "text" id = "component" placeholder = "Enter CLI Commands">
+				<textarea class = "form-control" id = "custom" rows = "3" placeholder = "Enter CLI Commands"></textarea>
+			</div>
+		</div>
+
+		<!-- Platform -->
+		<div class = "centered padded container" id = "platform">
+			<p class = "bold centered subsection-title">Platform:</p>
+			<div class = "padded container-internals">
+				<div class = "subsection platform-subsection" id = "plat-sub-1" onclick = "change_bg_color(this.id, '#42ACE5')">
+					<p class = "bold header">Hardware</p>
+					<p class = "rounded description platform-description"><span class = "bold">Hardware</span> requires the inclusion of a path to a YAML file containing configurations for the router</p>
+				</div>
+				<div class = "subsection platform-subsection" id = "plat-sub-2" onclick = "change_bg_color(this.id, '#42ACE5')">
+					<p class = "bold header">Simulation</p>
+					<div class = "rounded description platform-description">Any of the following <span class = "bold">simulation</span> environments may be selected:
+						<ul>
+							<li>ENXR</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Submitted through Javascript in bulk -->
+			<div>
+				<input class = "rounded form-control textbox" id = "yaml-path" type = "text" placeholder = "Enter YAML Path">
+			     <select class = "form-control" id = "simulations">
+			     	<option>ENXR</option>
+			     </select>
+			</div>
+		</div>
+
+		<!-- Optional Selections -->
+		<div class = "centered padded container" id = "options">
+			<p class = "bold centered subsection-title">Optional Selections:</p>
+			<div class = "padded container-internals">
+				<div class = "subsection options-subsection" id = "opt-sub-1" onclick = "change_bg_color(this.id, '#E2AF4A')">
+					<p class = "bold header">Stress Test</p>
+					<p class = "rounded description options-description">A <span class = "bold">Stress Test</span> will perform an expansion of each of the CLI commands entered, executing negative and edge-case testing</p>
+					<p class = "rounded description submission-description">You cannot perform a stress test in <span class = "bold">custom</span> mode</p>
+					<div class = "rounded description left" id = "options-ex">
+						<span class = "bold example">ex.<br></span>
+						<span class = "bold">Command: </span>
+						tcp synwait-time <5-30><br>
+						<span class = "bold">Expansion: <br></span>
+						tcp synwait-time 1, <br>
+						tcp synwait-time 30, <br>
+						tcp synwait-time -1, <br>
+						tcp synwait-time 31
+					</div>
+				</div>
+				<div class = "subsection options-subsection" id = "opt-sub-2" onclick = "change_bg_color(this.id, '#E2AF4A')">
+					<p class = "bold header">Release to Release</p>
+					<p class = "rounded description options-description">A <span class = "bold">release to release</span> comparison will provide statistics detailing an increase or decrease in bugs detected</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Submission -->
+		<div class = "centered padded container" id = "submission">
+			<div class = "padded container-internals">
+				<div class = "subsection" id = "signin">
+					<p class = "rounded description submission-description"><span class = "bold">Yangle</span> will remember your tests for you! Sign in to utilize our database and be able to check logs of your previous tests!</p>
+					<form method = "POST">
+						<button class = "btn" id = "submission-signin" type = "submit">Sign In</button>
+					</form>
+				</div>
+				<div class = "subsection submission-subsection">
+					<p class = "bold header">FireX Email Recipients</p>
+
+					<p class = "rounded description submission-description">Add CEC <span class = "bold">usernames</span> to receive notifications from FireX updating you on the progress of your tests</p>
+					<div id = "recipient-submission">
+						<input class = "rounded form-control" id = "enter-recipients" type = "text" placeholder = "Add CEC Username">
+						<button class = "btn" id = "add-recipient">Add</button>
+					</div>
+					<ul class = "list-group" id = "recipients"></ul>
+				</div>
+			</div>
+			<!-- Submitted through Javascript in bulk -->
+			<div>
+				<input class = "submission-btn btn" type = "submit" value = "SUBMIT"></button>
+			</div>
+		</div>
+
+	</body>
+
+	<!-- Javascript link -->
+	<script type = "text/javascript" src = "../static/javascript/script.js"></script>
+</html>

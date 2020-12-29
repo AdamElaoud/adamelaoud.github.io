@@ -1,0 +1,249 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+.gradient {
+    background: rgb(7,22,90);
+    background: linear-gradient(90deg, rgba(23,7,90,1) 35%, rgba(75,165,249,1) 100%);}
+
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 18rem;
+}
+
+.btn {
+   font-size: 1.5rem;
+   border-radius: 2rem;
+   border: .11rem solid #FFFFFF; 
+   background: #FFFFFF;
+   color: #17075A;
+   margin-left: 2rem;
+   padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.btn:hover, .btn:active {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border: .11rem solid #FFFFFF !important; 
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.btn:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 5rem;
+}
+
+#hook {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#desc {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#logo-text {
+    color: #FFFFFF;
+    font-size: 2.25rem;
+}
+
+#logo {
+    width: 3.5rem;
+}
+
+.display {
+    width: 15rem;
+    margin-left: 5rem;
+}
+
+#notes {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 0.75rem;
+    position: relative;
+    background: #FFFFFF;
+    left: 12.5%;
+    top: -10rem;
+    padding: 1rem;
+    width: 75vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 15rem;
+    font-size: 1.5rem;
+    margin: 1rem 1.75rem 1rem 1.75rem;
+}
+
+.icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: #17075A;
+}
+
+.title {
+    color: #000000;
+    font-weight: bold;
+}
+
+#examples-title:after, .title:after {
+    content: "";
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    background-color: #4BD8f9;
+    height: 3px;
+    width: 5rem;
+}
+
+.section-desc {
+    font-size: 1rem;
+    text-align: left;
+}
+
+#examples {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5rem;
+    padding-bottom: 6rem;
+}
+
+#examples-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #17075A;
+    margin-bottom: 1rem;
+    margin-left: 11rem;
+}
+
+#screenshots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+#screenshot {
+    width: 70rem;
+    margin: auto;
+}
+
+#demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5rem;
+    align-items: center;
+}
+
+#ad {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.75rem;
+    position:relative;
+    width: 55vw;
+    top: -3rem;
+    background: #FFFFFF;
+    font-size: 2.5rem;
+    color: #17075A;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1rem 3rem 1rem 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.alt-btn {
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    border: .11rem solid #17075A; 
+    background: #17075A;
+    color: #FFFFFF;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+ }
+
+.alt-btn:hover, .alt-btn:active {
+    background: transparent !important;
+    color: #17075A !important;
+    border: .11rem solid #17075A !important; 
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    background: #384450;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+
+#footer-title-card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+}
+
+#footer-logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+#footer-logo-text {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
+#footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-item {
+    padding: 2rem;
+    margin-left: 5rem;
+}
+
+.footer-item-title {
+    font-weight: bold;
+    font-size: 1.35rem;
+}
+
+.member {
+    color: #FFFFFF;
+}
+
+.member:hover {
+    color: #4BD8f9;
+    cursor: pointer;
+    text-decoration: none;
+}

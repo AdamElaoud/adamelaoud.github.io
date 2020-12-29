@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+	<head>
+		<meta charset = "utf-8">
+		<title>Scholarly | Dig Deeper</title>
+
+		<!-- Bootstrap StyleSheet -->
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin = "anonymous">
+
+        <!-- Font Awesome Icons -->
+        <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity = "sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin = "anonymous">
+
+		<!-- JQuery Comments Stylesheet -->
+		<link rel = "stylesheet" type = "text/css" href = "javascript/jquery-comments/css/jquery-comments.css">
+
+        <!-- Stylesheet -->
+        <link rel = "stylesheet" href = "visual/css/style.css">
+
+        <!-- Google Fonts -->
+        <link href = "https://fonts.googleapis.com/css?family=Abel|Lobster|News+Cycle&display=swap" rel = "stylesheet">
+
+        <!-- Favicon -->
+        <link rel = "icon" href = "visual/images/logo-library.png">
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		<nav class = "navbar navbar-expand-lg navbar-light">
+			<a class = "navbar-brand" href = "#">
+				<img id = "logo" src = "visual/images/logo-library.png">
+				<span id = "brand">Scholarly</span>
+				<span id = "slogan">Dig Deeper</span>
+			</a>
+			<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarSupportedContent" aria-controls = "navbarSupportedContent" aria-expanded = "false" aria-label = "Toggle navigation">
+				<span class = "navbar-toggler-icon"></span>
+			</button>
+
+			<div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+				<ul class = "navbar-nav mr-auto">
+					<li class = "nav-item dropdown">
+						<a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdown" role = "button" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">
+							Article Categories
+						</a>
+						<div class = "dropdown-menu dropdown-menu-right" aria-labelledby = "navbarDropdown">
+							<!-- <div class = "dropdown-divider"></div> -->
+							<a class = "dropdown-item" href = "#">Business</a>
+							<a class = "dropdown-item" href = "#">Economics</a>
+							<a class = "dropdown-item" href = "#">Education</a>
+							<a class = "dropdown-item" href = "#">Electronics</a>
+							<a class = "dropdown-item" href = "#">Ethics</a>
+							<a class = "dropdown-item" href = "#">Health</a>
+							<a class = "dropdown-item" href = "#">Legal</a>
+							<a class = "dropdown-item" href = "#">Politics</a>
+							<a class = "dropdown-item" href = "#">Religion</a>
+						</div>
+					</li>
+				</ul>
+				<form class = "form-inline my-2 my-lg-0">
+					<input class = "form-control mr-sm-2 adjusted-input" type = "search" placeholder = "Search" aria-label = "Search">
+					<button class = "btn my-2 my-sm-0 adjusted-button" type = "submit">Browse</button>
+				</form>
+			</div>
+		</nav>
+		<!-- END Navbar -->
+
+		<!-- Featured Articles Slide -->
+		<div id = "featured-articles">
+			<!-- will contain slideshow of featured articles of the week -->
+		</div>
+		<!-- END Featured Articles Slide -->
+
+		<!-- Row Wrapper -->
+		<div class = "flex-row">
+
+			<!-- LEFT COLUMN -->
+			<div class = "flex-col" id = "article">
+				<!-- Article Header -->
+				<div id = "article-head">
+					<img id = "author-profile" src = "visual/images/authors/steve-patterson.jpeg">
+					<div id = "article info">
+						<p id = "article-title">Does Free Will Even Make Sense?</p>
+						<div id = "article-details">
+							<span class = "padded">
+								<i class = "fas fa-user"></i>
+								By: Steve Patterson
+							</span>
+							<span class = "padded">
+								<i class = "far fa-calendar-alt"></i>
+								Date: October 13th, 2015
+							</span>
+							<span class = "padded">
+								<i class = "far fa-comment"></i>
+								<span id = "comment-count">0</span> Comment(s)
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- END Article Header -->
+
+				<!-- Article Content -->
+				<div id = "article-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum. <br> <br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum. <br> <br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum. <br> <br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum. <br> <br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum. <br> <br>
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum. <br> <br>
+				</div>
+				<!-- END Article Content -->
+			</div>
+			<!-- END LEFT COLUMN -->
+
+			<!-- RIGHT COLUMN -->
+			<div class = "flex-col">
+				<!-- Recommendations -->
+				<div class = "flex-col" id = "recommendations">
+					<div id = "sidebar-container">
+						<button class = "sidebar-options" id = "suggested" type = "button">Suggested for You
+							<div class = "underline" id = "suggested-underline"></div>
+						</button>
+						<button class = "sidebar-options" id = "popular" type = "button">Popular
+							<div class = "underline" id = "popular-underline"></div>
+						</button>
+					</div>
+
+					<!-- Sidebar Item #1 -->
+					<div class = "sidebar-item">
+						<img class = "sidebar-profile" src = "visual/images/authors/giorgos-petkakis.png">
+						<div class = "flex-col">
+							<div class = "sidebar-details">
+								<span class = "bookmark">
+									 <i class = "far fa-bookmark"></i> Electronics
+								</span>
+								<span class = "floater">
+									Giorgos P. Oct. 17th 8 min
+								</span>
+							</div>
+							<div class = "sidebar-content">
+								<div class = "sidebar-title">
+									7 Essential Books for Programmers
+								</div>
+								<div class = "sidebar-desc">
+									A reading guide for those serious about <br>
+									programming
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Sidebar Item #2 -->
+					<div class = "sidebar-item">
+						<img class = "sidebar-profile" src = "visual/images/authors/jack-herrera.jpeg">
+						<div class = "flex-col">
+							<div class = "sidebar-details">
+								<span class = "bookmark">
+									 <i class = "far fa-bookmark"></i> Politics
+								</span>
+								<span class = "floater">
+									Jack H. Oct. 17th  5 min
+								</span>
+							</div>
+							<div class = "sidebar-content">
+								<div class = "sidebar-title">
+									Gov't Testing Mass Surveillance on the Border
+								</div>
+								<div class = "sidebar-desc">
+									Almost all tech developed at the border in the <br>
+									past 20 years now exists in local police depts
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Sidebar Item #3 -->
+					<div class = "sidebar-item">
+						<img class = "sidebar-profile" src = "visual/images/authors/madison-kircher.jpg">
+						<div class = "flex-col">
+							<div class = "sidebar-details">
+								<span class = "bookmark">
+									 <i class = "far fa-bookmark"></i> Health
+								</span>
+								<span class = "floater">
+									Madison K. Oct. 8th 6 min
+								</span>
+							</div>
+							<div class = "sidebar-content">
+								<div class = "sidebar-title">
+									How a Night Owl Can Become An Early Bird
+								</div>
+								<div class = "sidebar-desc">
+									You're not entirely at the mercy of your <br>
+									body's natural rhythms
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Sidebar Item #4 -->
+					<div class = "sidebar-item">
+						<img class = "sidebar-profile" src = "visual/images/authors/markham-heid.jpeg">
+						<div class = "flex-col">
+							<div class = "sidebar-details">
+								<span class = "bookmark">
+									 <i class = "far fa-bookmark"></i> Health
+								</span>
+								<span class = "floater">
+									Markham H. Oct. 4th 4 min
+								</span>
+							</div>
+							<div class = "sidebar-content">
+								<div class = "sidebar-title">
+									Why is Inflammation in All Sickness
+								</div>
+								<div class = "sidebar-desc">
+									It's a culprit in diseases ranging from <br>
+									arthritis to depression
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Sidebar Item #5 -->
+					<div class = "sidebar-item">
+						<img class = "sidebar-profile" src = "visual/images/authors/owen-williams.jpeg">
+						<div class = "flex-col">
+							<div class = "sidebar-details">
+								<span class = "bookmark">
+									 <i class = "far fa-bookmark"></i> Electronics
+								</span>
+								<span class = "floater">
+									Owen W. Oct. 22nd 6 min
+								</span>
+							</div>
+							<div class = "sidebar-content">
+								<div class = "sidebar-title">
+									There's Finally a Decent Android Smartwatch
+								</div>
+								<div class = "sidebar-desc">
+									Samsung's Galaxy Watch Active 2 is the first <br>
+									smartwatch that compares to Apple Watch
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Sidebar Item #6 -->
+					<div class = "sidebar-item">
+						<img class = "sidebar-profile" src = "visual/images/authors/stephanie-clifford.jpeg">
+						<div class = "flex-col">
+							<div class = "sidebar-details">
+								<span class = "bookmark">
+									 <i class = "far fa-bookmark"></i> Economics
+								</span>
+								<span class = "floater">
+									Stephanie C. Sept. 30th 13 min
+								</span>
+							</div>
+							<div class = "sidebar-content">
+								<div class = "sidebar-title">
+									What Happens When You Become A Millionaire
+								</div>
+								<div class = "sidebar-desc">
+									Peter Rahal sold his company for $600 million; <br>
+									here's life on the other side of the fantasy
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END Recommendations -->
+			</div>
+			<!-- END RIGHT COLUMN -->
+
+		</div>
+		<!-- END Row Wrapper -->
+
+		<!-- Satisfaction Survey -->
+		<div class = "flex-row" id = "survey">
+			<div class = "survey-icons">
+				<i class = "icon far fa-thumbs-up"></i>
+				<i class = "icon far fa-thumbs-down"></i>
+			</div>
+			Enjoyed the article?
+			<div class = "survey-icons">
+				<i class = "icon fab fa-facebook-square"></i>
+				<i class = "icon fab fa-twitter"></i>
+				<i class = "icon fab fa-reddit-alien"></i>
+			</div>
+		</div>
+
+		<!-- Comment Section -->
+		<div id = "comment-section">
+			<div id = "comment-title">
+				Comments
+			</div>
+			<div id = "commenting">
+				<!-- PLUGIN FILLS CONTENT -->
+			</div>
+		</div>
+		<!-- END Comment Section -->
+
+		<!-- Footer -->
+		<div class = "flex-row" id = "footer">
+			<!-- LEFT COLUMN -->
+			<div class = "flex-col" id = "connect">
+				<div id = "get-updates">
+					Get updates on your favorite authors!
+				</div>
+				<div>
+
+					<form class = "form-inline my-2 my-lg-0">
+						<input class = "form-control mr-sm-2 adjusted-input" id = "signup-input" type = "search" placeholder = "Enter your email" aria-label = "Search">
+						<button class = "btn my-2 my-sm-0 adjusted-button" id = "signup-button" type = "submit">Sign Up!</button>
+					</form>
+				</div>
+			</div>
+			<!-- END LEFT COLUMN -->
+
+			<!-- RIGHT COLUMN -->
+			<div class = "flex-col">
+				<div class = "flex-row">
+					<div>
+						<img id = "author-feature-profile" src = "visual/images/authors/asha-rangappa.jpeg">
+					</div>
+					<div id = "author-feature">
+						<div id = "author-feature-title">
+							Author of the month: <span class = "non-bold">Asha Rangappa</span>
+						</div>
+						<div id = "author-feature-desc">
+							Asha Rangappa is a Senior Lecturer at the Yale Jackson Institute for Global Affairs.
+							She is a former FBI Special Agent and currently a legal analyst for CNN.
+						</div>
+						<div id = "author-feature-article">
+							<div class = "flex-col">
+								<div class = "sidebar-details">
+									<span class = "bookmark">
+										 <i class = "far fa-bookmark"></i> Politics
+									</span>
+									<span class = "floater">
+										Oct. 7th 5 min
+									</span>
+								</div>
+								<div class = "sidebar-content">
+									<div class = "sidebar-title">
+										Trump Tried Running Illegal Covert Propaganda Against Americans
+									</div>
+									<div class = "sidebar-desc">
+										A whistleblower stopped a covert psychological <br>
+										operation against the American public
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END RIGHT COLUMN -->
+		</div>
+		<!-- END Footer -->
+
+		<!-- Footer Contact -->
+		<div id = "contact">
+			Handcrafted with love &copy Adam Elaoud 2019 &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp
+			<span class = "footer-link">1.888.555.4444 &nbsp&nbsp&nbsp</span>
+			|
+			<span class = "footer-link"> &nbsp&nbsp&nbsp Privacy Policy &nbsp&nbsp&nbsp </span>
+			|
+			<span class = "footer-link"> &nbsp&nbsp&nbsp Disclaimer &nbsp&nbsp&nbsp</span>
+			<i class = "footer-icon fab fa-facebook-square"></i>
+			<i class = "footer-icon fab fa-twitter"></i>
+			<i class = "footer-icon fab fa-instagram"></i>
+			<i class = "footer-icon fab fa-linkedin-in"></i>
+		</div>
+		<!-- END Footer Contact -->
+
+		<!-- JQuery -->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Bootstrap JS and JQuery -->
+		<script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin = "anonymous"></script>
+		<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity = "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin = "anonymous"></script>
+
+		<!-- Bootstrap Dropdown Hover -->
+		<script src = "javascript/bootstrap-dropdown-hover-4.2.0/dist/jquery.bootstrap-dropdown-hover.min.js"></script>
+
+		<!-- JQuery Comments -->
+		<script type = "text/javascript" src = "javascript/jquery-comments/js/jquery-comments.js"></script>
+
+		<!-- Javascript -->
+		<script type = "text/javascript" src = "javascript/index.js"></script>
+
+	</body>
+</html>
