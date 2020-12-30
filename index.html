@@ -1,4 +1,4 @@
-<!-- (c) Copyright Adam Elaoud 2020
+<!-- (c) Copyright Adam Elaoud
 
       _/_/     _/_/_/       _/_/     _/      _/       _/_/_/_/   _/           _/_/       _/_/_/     _/      _/   _/_/_/
    _/    _/   _/    _/   _/    _/   _/_/  _/_/       _/         _/         _/    _/   _/      _/   _/      _/   _/    _/
@@ -25,7 +25,7 @@ Feel free to contact me with any questions!
         </script>
 
         <meta charset = "utf-8">
-        <meta name = "description" content = "Let's make something incredible together">
+        <meta name = "description" content = "Let's create something incredible together">
         <meta name = "keywords" content = "Adam Elaoud, Adam, Elaoud, UMD, University of Maryland, Computer, Science, Software, Engineer, Developer, Development, Dev, Web, Design, Cisco, Motorola">
         <meta name = "author" content = "Adam Elaoud">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
@@ -34,12 +34,12 @@ Feel free to contact me with any questions!
         <meta property = "og:title" content = "Adam Elaoud | Software Engineer & Developer">
         <meta property = "og:site_name" content = "Adam Elaoud | Software Engineer & Developer">
         <meta property = "og:url" content = "https://adamelaoud.com">
-        <meta property = "og:description" content = "Let's make something incredible together">
-        <meta property = "og:image" content = "images/logo-transparent-purple.png">
+        <meta property = "og:description" content = "Let's create something incredible together">
+        <meta property = "og:image" content = "images/logos/logo-transparent-purple.png">
         
         <meta property = "twitter:title" content = "Adam Elaoud | Software Engineer & Developer">
-        <meta property = "twitter:description" content = "Let's make something incredible together">
-        <meta property = "twitter:image" content = "images/logo-transparent-purple.png">
+        <meta property = "twitter:description" content = "Let's create something incredible together">
+        <meta property = "twitter:image" content = "images/logos/logo-transparent-purple.png">
 
         <title>Adam Elaoud | Software Engineer & Developer</title>
 
@@ -63,230 +63,306 @@ Feel free to contact me with any questions!
         <link href  = "https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel  = "stylesheet">
 
         <!-- Europa Font -->
-        <link href  = "https://db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa" rel  = "stylesheet" type  = "text/css"/>
+        <link href = "https://db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa" rel  = "stylesheet" type  = "text/css"/>
 
         <!-- Favicon -->
-        <link rel = "icon" href = "images/logo-purple.png">
+        <link rel = "icon" href = "images/logos/logo-white.png">
     </head>
 
     <body>
-        <!-- Navbar -->
-        <div class = "navbar">
-            <a class = "navbar-brand" href = "#">
-                <img id = "logo" src = "images/logo-transparent-white.png">
-                <span id = "brand">| ADAM ELAOUD</span>
-            </a>
-            <div class = "navbar-text">
-                <div id = "nav-icons" class = "centered-flex-row">
-                    <a href = "https://linkedin.com/in/adamelaoud/" target  = "_blank">
-                        <i class = "nav-icon icon fab fa-linkedin"></i>
-                    </a>
-    
-                    <a href = "https://github.com/AdamElaoud/" target = "_blank">
-                        <i class = "nav-icon icon fab fa-github"></i>
-                    </a>
-    
-                    <a href = "resume.pdf" target = "_blank">
-                        <i class = "nav-icon icon fas fa-file-contract"></i>
-                    </a>
-                </div>
-            </div>
+        <!-- Cover Page -->
+        <div id = "cover" class = "gradient">
+            <img id = "cover-logo" src = "images/logos/logo-transparent-white.png">
+            <span id = "cover-name">ADAM ELAOUD</span>
+            <button id = "cover-button" onclick = "enter()">Enter</button>
         </div>
 
-        <!-- Hero -->
-        <div id = "hero" class = "gradient">
-            <div id = "header">
-                <span id = "title">
-                    Software Engineer & Developer
+        <!-- SITE CONTENT -->
+        <div id = "site-content">
+            <!-- Navbar -->
+            <div class = "navbar">
+                <a class = "navbar-brand" href = "#">
+                    <img id = "logo" src = "images/logos/logo-transparent-white.png">
+                    <span id = "brand">| ADAM ELAOUD</span>
+                </a>
+
+                <div class = "navbar-text">
+                    <div id = "nav-icons" class = "centered-flex-row">
+                        <a href = "https://linkedin.com/in/adamelaoud/" target  = "_blank">
+                            <i class = "nav-icon icon fab fa-linkedin"></i>
+                        </a>
+        
+                        <a href = "https://github.com/AdamElaoud/" target = "_blank">
+                            <i class = "nav-icon icon fab fa-github"></i>
+                        </a>
+        
+                        <a href = "resume.pdf" target = "_blank">
+                            <i class = "nav-icon icon fas fa-file-contract"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero -->
+            <div id = "hero" class = "gradient">
+                <div id = "header">
+                    <span id = "title">
+                        Software Engineer & Developer
+                    </span>
+                    
+                    <span id = "slogan">
+                        Let's create something <span id = "incredible">incredible</span> together
+                    </span>
+
+                    <div id = "hero-icons" class = "centered-flex-row">
+                        <a href = "https://linkedin.com/in/adamelaoud/" target  = "_blank">
+                            <i class = "hero-icon icon fab fa-linkedin"></i>
+                        </a>
+        
+                        <a href = "https://github.com/AdamElaoud/" target = "_blank">
+                            <i class = "hero-icon icon fab fa-github"></i>
+                        </a>
+        
+                        <a href = "resume.pdf" target = "_blank">
+                            <i class = "hero-icon icon fas fa-file-contract"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Brag -->
+            <div id = "users" class = "section">
+                <div id = "brag" class = "section-title">
+                    Applications I've developed are serving
+                    <br>
+                    over <span id = "count">100,000</span> users
+                </div>
+
+                <div id = "companies">
+                    <img class = "company adjusted-up" src = "images/companies/umd.png">
+                    <img class = "company" src = "images/companies/cisco.png">
+                    <img class = "company adjusted-down" src = "images/companies/discord.png">
+                    <img class = "company adjusted-up" src = "images/companies/android.png">
+                    <img class = "company adjusted-up" src = "images/companies/motorola.png">
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div id = "projects" class = "section">
+                <span class = "section-title">Some of my best projects</span>
+
+                <!-- categories -->
+                <div id = "categories" class = "centered-flex-row">
+                    <div id = "website-category" class = "category" onclick = "typeChange(this)">
+                        <img id = "globe" class = "category-icon" src = "images/icons/globe.png">
+                        <span class = "category-title">Websites</span>
+                        <span class = "bar"></span>
+                    </div>
+
+                    <div id = "application-category" class = "category" onclick = "typeChange(this)">
+                        <img class = "category-icon" src = "images/icons/laptop.png">
+                        <span class = "category-title">Applications</span>
+                        <span class = "bar"></span>
+                    </div>
+
+                    <div id = "game-category" class = "category" onclick = "typeChange(this)">
+                        <img class = "category-icon" src = "images/icons/gamepad.png">
+                        <span class = "category-title">Games</span>
+                        <span class = "bar"></span>
+                    </div>
+                </div>
+
+                <!-- cards -->
+                <div id = "project-cards">
+                    <!-- websites -->
+                    <div class = "project website shadow">
+                        <img class = "project-icon" src = "images/projects/apollo.png">
+                        <span class = "project-title">Apollo</span>
+                        <span class = "project-description">
+                            Android app gamification of "Go-No-Go" inhibition testing.
+                        </span>
+                        <span class = "project-date">Dec. 2020</span>
+                        <span class = "card-hover">
+                            <button class = "expand" data-toggle = "modal" data-target = "#apollo-site-modal">Learn More</button>
+                        </span>
+                    </div>
+
+                    <div class = "project website shadow">
+                        <img class = "project-icon" src = "images/projects/scholarly.png">
+                        <span class = "project-title">Scholarly</span>
+                        <span class = "project-description">
+                            Concept site for intellectual articles and debate.
+                        </span>
+                        <span class = "project-date">Oct. 2019</span>
+                        <span class = "card-hover">
+                            <button class = "expand">Learn More</button>
+                        </span>
+                    </div>
+
+                    <div class = "project website shadow">
+                        <img class = "project-icon" src = "images/projects/yangle.png">
+                        <span class = "project-title">Yangle</span>
+                        <span class = "project-description">
+                            Website interface for Cisco engineers to submit overnight testing scripts.
+                        </span>
+                        <span class = "project-date">July. 2018</span>
+                        <span class = "card-hover">
+                            <button class = "expand">Learn More</button>
+                        </span>
+                    </div>
+
+                    <div class = "project website shadow">
+                        <img class = "project-icon" src = "images/projects/old-site.png">
+                        <span class = "project-title">Old Portfolio</span>
+                        <span class = "project-description">
+                            First iteration of my personal website portfolio.
+                        </span>
+                        <span class = "project-date">Oct. 2017</span>
+                        <span class = "card-hover">
+                            <button class = "expand">Learn More</button>
+                        </span>
+                    </div>
+
+                    <!-- applications -->
+                    <div class = "project application shadow">
+                        <img class = "project-icon" src = "images/projects/apollo.png">
+                        <span class = "project-title">Apollo</span>
+                        <span class = "project-description">
+                            Landing page built for the Apollo Android app.
+                        </span>
+                        <span class = "project-date">Dec. 2020</span>
+                        <span class = "card-hover">
+                            <button class = "expand">Learn More</button>
+                        </span>
+                    </div>
+
+                    <div class = "project application shadow">
+                        <img class = "project-icon" src = "images/projects/cs.png">
+                        <span class = "project-title">UMD CS Bot</span>
+                        <span class = "project-description">
+                            Bot that streamlines daily operations at the University of Maryland CS department.
+                        </span>
+                        <span class = "project-date">Oct. 2020</span>
+                        <span class = "card-hover">
+                            <button class = "expand">Learn More</button>
+                        </span>
+                    </div>
+
+                    <div class = "project application shadow">
+                        <img class = "project-icon" src = "images/projects/kiwi.png">
+                        <span class = "project-title">Kiwi</span>
+                        <span class = "project-description">
+                            Bot that performs predictive statistics calculations for a game on the platform, Discord.
+                        </span>
+                        <span class = "project-date">June 2020</span>
+                        <span class = "card-hover">
+                            <button class = "expand">Learn More</button>
+                        </span>
+                    </div>
+
+                    <!-- games -->
+                    <div class = "project game shadow">
+                        <img class = "project-icon" src = "images/projects/ink.png">
+                        <span class = "project-title">Detective Ink</span>
+                        <span class = "project-description">
+                            Puzzle platforming game developed in Unity.
+                        </span>
+                        <span class = "project-date">June 2019</span>
+                        <span class = "card-hover">
+                            <button class = "expand">Learn More</button>
+                        </span>
+                    </div>
+
+                    <div class = "project game shadow">
+                        <img class = "project-icon" src = "images/projects/leap.png">
+                        <span class = "project-title">Leap</span>
+                        <span class = "project-description">
+                            Platforming game developed in Unity for Ludum Dare game jam competition #44.
+                        </span>
+                        <span class = "project-date">April 2019</span>
+                        <span class = "card-hover">
+                            <button class = "expand">Learn More</button>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Website Modals -->
+            <div class = "modal fade" id = "apollo-site-modal" tabindex = "-1" role = "dialog" aria-labelledby = "exampleModalCenterTitle" aria-hidden = "true">
+                <div class = "modal-dialog modal-dialog-centered" role = "document">
+                    <div class = "modal-content">
+                        <div class = "modal-header">
+                            <h5 class = "modal-title" id = "exampleModalLongTitle">Modal title</h5>
+                            <button type = "button" class = "close" data-dismiss = "modal" aria-label = "Close">
+                                <span aria-hidden = "true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class = "modal-body">
+                        ...
+                        </div>
+
+                        <div class = "modal-footer">
+                            <button type = "button" class = "btn btn-secondary" data-dismiss = "modal">Close</button>
+                            <button type = "button" class = "btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Application Modals -->
+
+            <!-- Game Modals -->
+
+            <!-- Hire Card -->
+            <div id = "hire-card" class = "section shadow">
+                <span id = "hire-me">Hire Me!</span>
+
+                <span id = "interested">
+                    Interested in working together? Let's get
+                    <br>
+                    in contact! I'll buy the coffee.
                 </span>
-                
-                <span id = "slogan">
-                    Let's make something <span id = "incredible">incredible</span> together
-                </span>
 
-                <div id = "hero-icons" class = "centered-flex-row">
+                <a id = "mail" href = "mailto:elaoud.adam@gmail.com" target = "_blank">
+                    Email Me!
+                </a>
+            </div>
+
+            <!-- Footer -->
+            <div id = "footer" class = "gradient">
+                <img id = "footer-logo" src = "images/logos/logo-transparent-white.png">
+                <span id = "name">ADAM ELAOUD</span>
+
+                <div id = "footer-links" class = "centered-flex-row">
                     <a href = "https://linkedin.com/in/adamelaoud/" target  = "_blank">
-                        <i class = "hero-icon icon fab fa-linkedin"></i>
+                        <i class = "footer-icon icon fab fa-linkedin"></i>
                     </a>
-    
+
                     <a href = "https://github.com/AdamElaoud/" target = "_blank">
-                        <i class = "hero-icon icon fab fa-github"></i>
+                        <i class = "footer-icon icon fab fa-github"></i>
                     </a>
-    
+
                     <a href = "resume.pdf" target = "_blank">
-                        <i class = "hero-icon icon fas fa-file-contract"></i>
+                        <i class = "footer-icon icon fas fa-file-contract"></i>
                     </a>
                 </div>
+
+                <span>
+                    Handcrafted with love &copy <span id = "date"></span> <!-- date to be updated with JavaScript -->
+                </span>
             </div>
-        </div>
-
-        <!-- User Brag -->
-        <div id = "users" class = "section">
-            <div id = "brag" class = "section-title">
-                Applications I've developed are serving
-                <br>
-                over <span id = "count">100,000</span> users
-            </div>
-            <div id = "companies">
-                <img class = "company" src = "images/logo-transparent-purple.png">
-                <img class = "company" src = "images/logo-transparent-purple.png">
-                <img class = "company" src = "images/logo-transparent-purple.png">
-                <img class = "company" src = "images/logo-transparent-purple.png">
-                <img class = "company" src = "images/logo-transparent-purple.png">
-            </div>
-        </div>
-
-        <!-- Projects -->
-        <div id = "projects" class = "section">
-            <span class = "section-title">Some of my best projects</span>
-
-            <div id = "categories" class = "centered-flex-row">
-                <div class = "category">
-                    <i class = "category-icon fas fa-globe"></i>
-                    <span class = "category-title">Websites</span>
-                </div>
-
-                <div class = "category">
-                    <i class = "category-icon fas fa-laptop-code"></i>
-                    <span class = "category-title">Applications</span>
-                </div>
-
-                <div class = "category">
-                    <i class = "category-icon fas fa-gamepad"></i>
-                    <span class = "category-title">Games</span>
-                </div>
-            </div>
-
-            <!-- displayed controlled via JavaScript -->
-            <div id = "project-cards">
-                <!-- Websites -->
-                <div class = "project website gradient">
-                    <img class = "project-icon" src = "images/apollo.png">
-                    <span class = "project-title">Apollo</span>
-                    <span class = "project-description">
-                        Android app gamification of "Go-No-Go" inhibition testing.
-                    </span>
-                    <span class = "project-date">Dec. 2020</span>
-                </div>
-
-                <div class = "project website gradient">
-                    <img class = "project-icon" src = "images/scholarly.png">
-                    <span class = "project-title">Scholarly</span>
-                    <span class = "project-description">
-                        Concept site for intellectual debate.
-                    </span>
-                    <span class = "project-date">Oct. 2019</span>
-                </div>
-
-                <div class = "project website gradient">
-                    <img class = "project-icon" src = "images/yangle.png">
-                    <span class = "project-title">Yangle</span>
-                    <span class = "project-description">
-                        Website interface for Cisco engineers to submit overnight testing scripts.
-                    </span>
-                    <span class = "project-date">July. 2018</span>
-                </div>
-
-                <div class = "project website gradient">
-                    <img class = "project-icon" src = "images/old-site.png">
-                    <span class = "project-title">Old Portfolio</span>
-                    <span class = "project-description">
-                        First iteration of my personal website portfolio.
-                    </span>
-                    <span class = "project-date">Oct. 2017</span>
-                </div>
-
-                <!-- Applications -->
-                <div class = "project application gradient">
-                    <img class = "project-icon" src = "images/apollo.png">
-                    <span class = "project-title">Apollo</span>
-                    <span class = "project-description">
-                        Landing page built for the Apollo Android app.
-                    </span>
-                    <span class = "project-date">Dec. 2020</span>
-                </div>
-
-                <div class = "project application gradient">
-                    <img class = "project-icon" src = "images/umd.png">
-                    <span class = "project-title">UMD CS Bot</span>
-                    <span class = "project-description">
-                        Bot that streamlines daily operations at the University of Maryland CS department.
-                    </span>
-                    <span class = "project-date">Oct. 2020</span>
-                </div>
-
-                <div class = "project application gradient">
-                    <img class = "project-icon" src = "images/kiwi.png">
-                    <span class = "project-title">Kiwi</span>
-                    <span class = "project-description">
-                        Bot that performs predictive statistics calculations for a game on the platform, Discord.
-                    </span>
-                    <span class = "project-date">June 2020</span>
-                </div>
-
-                <!-- Games -->
-                <div class = "project game gradient">
-                    <img class = "project-icon" src = "images/ink.png">
-                    <span class = "project-title">Detective Ink</span>
-                    <span class = "project-description">
-                        Puzzle platforming game developed in Unity.
-                    </span>
-                    <span class = "project-date">June 2019</span>
-                </div>
-
-                <div class = "project game gradient">
-                    <img class = "project-icon" src = "images/leap.png">
-                    <span class = "project-title">Leap</span>
-                    <span class = "project-description">
-                        Platforming game developed in Unity for Ludum Dare game jam competition #44.
-                    </span>
-                    <span class = "project-date">April 2019</span>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Hire Card -->
-        <div id = "hire-card" class = "section">
-            <span id = "hire-me">Hire Me!</span>
-
-            <span id = "interested">
-                Interested in working together? Let's get
-                <br>
-                in contact! I'll buy the coffee.
-            </span>
-
-            <a id = "mail" href = "mailto:elaoud.adam@gmail.com" target = "_blank">
-                Email Me!
-            </a>
-        </div>
-
-        <!-- Footer -->
-        <div id = "footer" class = "gradient">
-            <img id = "footer-logo" src = "images/logo-transparent-white.png">
-            <span id = "name">ADAM ELAOUD</span>
-
-            <div id = "footer-links" class = "centered-flex-row">
-                <a href = "https://linkedin.com/in/adamelaoud/" target  = "_blank">
-                    <i class = "footer-icon icon fab fa-linkedin"></i>
-                </a>
-
-                <a href = "https://github.com/AdamElaoud/" target = "_blank">
-                    <i class = "footer-icon icon fab fa-github"></i>
-                </a>
-
-                <a href = "resume.pdf" target = "_blank">
-                    <i class = "footer-icon icon fas fa-file-contract"></i>
-                </a>
-            </div>
-
-            <span>
-                Handcrafted with love &copy <span id = "date"></span> <!-- date to be updated with JavaScript -->
-            </span>
         </div>
 
         <!-- JQuery Core 3.5.1 -->
         <script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity = "sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin = "anonymous"></script>
+
+        <!-- Popper 1.16.0 -->
+        <script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity = "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin = "anonymous"></script>
+        
+        <!-- Bootstrap 4.4.1 -->
+        <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity = "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin = "anonymous"></script>
 
         <!-- JavaScript -->
         <script type = "text/javascript" src = "index.js"></script>

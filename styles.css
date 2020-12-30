@@ -2,6 +2,10 @@
     font-family: "Nunito", sans-serif;
 }
 
+body {
+    background: #f9f9f9;
+}
+
 a {
 	text-decoration: none !important;
 }
@@ -29,15 +33,100 @@ a:hover {
 }
 
 .gradient {
-    background: rgb(75,207,250);
     background: linear-gradient(90deg, rgba(75,207,250,1) 0%, rgba(117,47,230,1) 100%);
+}
+
+.shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Cover ------------------------------------------------------------------------ */
+#cover {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    transition: 2s all ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+#cover-logo {
+    position: relative;
+    width: 10rem;
+    animation: down 4s 1;
+}
+
+#cover-name {
+    position: relative;
+    font-size: 2rem;
+    margin-top: 1rem;
+    animation: left 4s 1;
+}
+
+#cover-button {
+    position: relative;
+    font-size: 1.35rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    margin-top: 5rem;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    background: transparent;
+    border-radius: 3rem;
+    transition: 0.25s all ease-in-out;
+    animation: up 4s 1;
+}
+
+#cover-button:hover {
+    color: #7E57FF;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+#cover-button:focus {
+    outline: none;
+}
+
+@keyframes down {
+    0% { opacity: 0; top: -3rem; }
+    100% { opacity: 1; top: 0rem; }
+}
+
+@keyframes left {
+    0% { opacity: 0; left: -7rem; }
+    100% { opacity: 1; left: 0rem; }
+}
+
+@keyframes up {
+    0% { opacity: 0; bottom: -4rem; }
+    100% { opacity: 1; bottom: 0rem; }
+}
+
+/* Site Content ------------------------------------------------------------------------ */
+#site-content {
+    opacity: 0;
+    display: none;
+    transition: 2s all ease-in-out;
+}
+
+.fade-in {
+    opacity: 1 !important;
 }
 
 /* Navbar ------------------------------------------------------------------------ */
 .navbar {
     position: fixed;
-    background-color: transparent;
+    transition: 0.35s ease-in-out;
+    background: transparent;
     width: 100vw;
+    height: 5rem;
 }
 
 .navbar-brand {
@@ -56,6 +145,31 @@ a:hover {
 
 .navbar-text {
     margin-right: 2rem;
+}
+
+.stuck {
+	position: fixed;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.white-nav {
+    background:rgba(255, 255, 255, .9);
+	color: #7E57FF;
+}
+
+.white-nav .navbar-brand #brand {
+    color: #7E57FF;
+}
+
+.purple-nav {
+    background: linear-gradient(90deg, rgb(75,207,250) 0%, rgb(117,47,230) 100%);
+    color: #FFFFFF;
+}
+
+.purple-nav .navbar-brand #brand {
+    color: #FFFFFF;
 }
 
 .icon {
@@ -85,8 +199,25 @@ a:hover {
 }
 
 .nav-icon {
+    color: #7E57FF;
+	border: 1px solid #7E57FF;
     font-size: 1.15rem;
     padding: 1rem;
+}
+
+.nav-icon:hover {
+    color: #FFFFFF;
+    background: #7E57FF;
+}
+
+.nav-icon-shift {
+    color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+}
+
+.nav-icon-shift:hover {
+    color: #7E57FF;
+    background: #FFFFFF;
 }
 
 /* Hero ------------------------------------------------------------------------ */
@@ -121,7 +252,7 @@ a:hover {
 }
 
 #hero-icons {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .hero-icon {
@@ -149,11 +280,20 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .company {
-    width: 4rem;
+    height: 3rem;
     margin: 3rem;
+}
+
+.adjusted-up {
+    height: 4rem;
+}
+
+.adjusted-down {
+    height: 2.5rem;
 }
 
 /* Projects ------------------------------------------------------------------------ */
@@ -176,15 +316,15 @@ a:hover {
     text-align: center;
     margin-right: 4rem;
     margin-left: 4rem;
+    cursor: pointer;
 }
 
 .category-icon {
-    font-size: 1.25rem;
-    color: #7E57FF; 
-    border: 2px solid rgba(126,87,255,0.5);
-    background: transparent;
-    padding: 1.75rem;
-    border-radius: 50%;
+    width: 3.25rem;
+}
+
+#globe {
+    width: 2.75rem;
 }
 
 .category-title{
@@ -192,8 +332,7 @@ a:hover {
     font-weight: 600;
 }
 
-.category-title::after {
-    content: "";
+.bar {
     display: block;
     margin-top: 1rem;
     background-color: rgb(145,153,160, 0.5);
@@ -201,44 +340,136 @@ a:hover {
     width: 15rem;
 }
 
+#application-category .category-title {
+    color: #7E57FF;
+}
+
+#application-category .bar {
+    background-color: #7E57FF;
+}
+
 #project-cards {
     margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project {
     position: relative;
-    color: #FFFFFF;
-    border-radius: 2rem;
-    margin-bottom: 1rem;
+    color: #000000;
+    border-radius: 1rem;
+    margin: 1rem;
     padding: 1rem;
-    width: 90vw;
+    width: 20rem;
+    height: 15rem;
     display: flex;
     align-items: center;
+    overflow: hidden;
+}
+
+.project::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    background:  linear-gradient(0deg, rgba(75,207,250,1) 0%, rgba(117,47,230,1) 100%);
+    height: 100%;
+    width: 15%;
+}
+
+.project::after {
+    position: absolute;
+    content: "";
+    background: #141C3A;
+    opacity: 0;
+    transition: 0.35s all ease-in-out;
+}
+
+.project:hover::after {
+    opacity: 1;
 }
 
 .project-icon {
     position: absolute;
-    left: 0.75rem;
-    width: 2.5rem;
+    z-index: 1;
+    left: 1rem;
+    top: 1.5rem;
+    width: 4rem;
     border-radius: 50%;
 }
 
 .project-title {
+    font-family: "Ubuntu", sans-serif;
     position: absolute;
-    left: 4rem;
+    left: 5.5rem;
+    top: 3.5rem;
     font-weight: bold;
 }
 
 .project-description {
+    position: absolute;
+    top: 7rem;
+    left: -8.5rem;
     font-size: 1.15rem;
     margin-left: 12.5rem;
+    width: 14.5rem;
 }
 
 .project-date {
     position: absolute;
-    right: 2rem;
+    right: 1.5rem;
+    top: 1rem;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    color: #7E57FF;
+}
+
+.card-hover {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #141C3A;
+    opacity: 0;
+    display: grid;
+    place-items: center;
+}
+
+.project .card-hover {
+    transition: 0.25s all ease-in-out;
+}
+
+.project:hover .card-hover {
+    opacity: 0.95;
+}
+
+.expand {
+    position: absolute;
+    font-size: 1.35rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #7E57FF;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.25s all ease-in-out;
+}
+
+.expand:hover {
+    background: #7E57FF;
+}
+
+.expand:focus {
+    outline: none;
+}
+
+.website {
+    display: none;
+}
+
+.game {
+    display: none;
 }
 
 /* Hire Card ------------------------------------------------------------------------ */
