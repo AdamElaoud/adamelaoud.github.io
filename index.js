@@ -8,14 +8,11 @@ $(document).ready( () => {
     let navbar = document.querySelector('.navbar');
     let logo = document.getElementById("logo");
     
-    // position where navbar background color will shift
-    let swapPos = $(window).height();
-
-    // height of navbar (16px * 5 rem)
-    let navbarHeight = 80;
-    
     // call on scroll
-    window.onscroll = () => { navScroll(navbar, logo, swapPos, navbarHeight); };
+    window.onscroll = () => { navScroll(navbar, logo); };
+
+    // modal X button image swap -------------------------------------------------------------------------
+    //$(".close-icon").hover( () => { console.log("hovered!"); $(".close-icon").attr("src", "images/icons/x-transparent.png"); } );
 });
 
 // category selection onClick function -------------------------------------------------------------------
@@ -67,7 +64,7 @@ function typeChange(ele) {
 }
 
 // navScroll onClick function ----------------------------------------------------------------------------
-function navScroll(navbar, logo, swapPos, navbarHeight) {
+function navScroll(navbar, logo) {
     if (window.pageYOffset > 0) {
         navbar.classList.add("stuck");
         navbar.classList.add("white-nav");

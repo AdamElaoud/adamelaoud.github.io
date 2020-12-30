@@ -176,19 +176,19 @@ Feel free to contact me with any questions!
                 <div id = "project-cards">
                     <!-- websites -->
                     <div class = "project website shadow">
-                        <img class = "project-icon" src = "images/projects/apollo.png">
+                        <img class = "project-icon" src = "images/project icons/apollo.png">
                         <span class = "project-title">Apollo</span>
                         <span class = "project-description">
                             Android app gamification of "Go-No-Go" inhibition testing.
                         </span>
                         <span class = "project-date">Dec. 2020</span>
                         <span class = "card-hover">
-                            <button class = "expand" data-toggle = "modal" data-target = "#apollo-site-modal">Learn More</button>
+                            <button class = "expand">Learn More</button>
                         </span>
                     </div>
 
                     <div class = "project website shadow">
-                        <img class = "project-icon" src = "images/projects/scholarly.png">
+                        <img class = "project-icon" src = "images/project icons/scholarly.png">
                         <span class = "project-title">Scholarly</span>
                         <span class = "project-description">
                             Concept site for intellectual articles and debate.
@@ -200,7 +200,7 @@ Feel free to contact me with any questions!
                     </div>
 
                     <div class = "project website shadow">
-                        <img class = "project-icon" src = "images/projects/yangle.png">
+                        <img class = "project-icon" src = "images/project icons/yangle.png">
                         <span class = "project-title">Yangle</span>
                         <span class = "project-description">
                             Website interface for Cisco engineers to submit overnight testing scripts.
@@ -212,7 +212,7 @@ Feel free to contact me with any questions!
                     </div>
 
                     <div class = "project website shadow">
-                        <img class = "project-icon" src = "images/projects/old-site.png">
+                        <img class = "project-icon" src = "images/project icons/old-site.png">
                         <span class = "project-title">Old Portfolio</span>
                         <span class = "project-description">
                             First iteration of my personal website portfolio.
@@ -225,19 +225,19 @@ Feel free to contact me with any questions!
 
                     <!-- applications -->
                     <div class = "project application shadow">
-                        <img class = "project-icon" src = "images/projects/apollo.png">
+                        <img class = "project-icon" src = "images/project icons/apollo.png">
                         <span class = "project-title">Apollo</span>
                         <span class = "project-description">
                             Landing page built for the Apollo Android app.
                         </span>
                         <span class = "project-date">Dec. 2020</span>
                         <span class = "card-hover">
-                            <button class = "expand">Learn More</button>
+                            <button class = "expand" data-toggle = "modal" data-target = "#apollo-modal">Learn More</button>
                         </span>
                     </div>
 
                     <div class = "project application shadow">
-                        <img class = "project-icon" src = "images/projects/cs.png">
+                        <img class = "project-icon" src = "images/project icons/cs.png">
                         <span class = "project-title">UMD CS Bot</span>
                         <span class = "project-description">
                             Bot that streamlines daily operations at the University of Maryland CS department.
@@ -249,7 +249,7 @@ Feel free to contact me with any questions!
                     </div>
 
                     <div class = "project application shadow">
-                        <img class = "project-icon" src = "images/projects/kiwi.png">
+                        <img class = "project-icon" src = "images/project icons/kiwi.png">
                         <span class = "project-title">Kiwi</span>
                         <span class = "project-description">
                             Bot that performs predictive statistics calculations for a game on the platform, Discord.
@@ -262,7 +262,7 @@ Feel free to contact me with any questions!
 
                     <!-- games -->
                     <div class = "project game shadow">
-                        <img class = "project-icon" src = "images/projects/ink.png">
+                        <img class = "project-icon" src = "images/project icons/ink.png">
                         <span class = "project-title">Detective Ink</span>
                         <span class = "project-description">
                             Puzzle platforming game developed in Unity.
@@ -274,7 +274,7 @@ Feel free to contact me with any questions!
                     </div>
 
                     <div class = "project game shadow">
-                        <img class = "project-icon" src = "images/projects/leap.png">
+                        <img class = "project-icon" src = "images/project icons/leap.png">
                         <span class = "project-title">Leap</span>
                         <span class = "project-description">
                             Platforming game developed in Unity for Ludum Dare game jam competition #44.
@@ -289,24 +289,37 @@ Feel free to contact me with any questions!
             </div>
 
             <!-- Website Modals -->
-            <div class = "modal fade" id = "apollo-site-modal" tabindex = "-1" role = "dialog" aria-labelledby = "exampleModalCenterTitle" aria-hidden = "true">
-                <div class = "modal-dialog modal-dialog-centered" role = "document">
+            <div class = "modal fade" id = "apollo-modal" tabindex = "-1">
+                <div class = "modal-dialog modal-lg modal-dialog-centered">
                     <div class = "modal-content">
-                        <div class = "modal-header">
-                            <h5 class = "modal-title" id = "exampleModalLongTitle">Modal title</h5>
-                            <button type = "button" class = "close" data-dismiss = "modal" aria-label = "Close">
-                                <span aria-hidden = "true">&times;</span>
-                            </button>
+                        <span class = "modal-proj-title">Apollo</span>
+
+                        <img class = "modal-icon" src = "images/project icons/apollo.png">
+
+                        <span class = "modal-date">Dec. 2020</span>
+
+                        <button type = "button" class = "modal-close" data-dismiss = "modal">
+                            <img class = "close-icon" src = "images/icons/x.png">
+                        </button>
+
+                        <img class = "modal-img" src = "images/project banners/apollo-banner.png">
+
+                        <div class = "modal-languages">
+                            <span class = "lang">Kotlin</span>
+                            <span class = "lang">JSON</span>
                         </div>
 
-                        <div class = "modal-body">
-                        ...
+                        <span class = "modal-desc">
+                            words words words words words words words words words words words words words words words words words words
+                            words words words words words words words words words words words words words words words words words words
+                            words words words words words words words words words words words words words words words words words words
+                        </span>
+
+                        <div class = "modal-links">
+                            links
                         </div>
 
-                        <div class = "modal-footer">
-                            <button type = "button" class = "btn btn-secondary" data-dismiss = "modal">Close</button>
-                            <button type = "button" class = "btn btn-primary">Save changes</button>
-                        </div>
+                        <button class = "modal-visit">Visit Site</button>
                     </div>
                 </div>
             </div>
