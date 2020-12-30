@@ -544,6 +544,32 @@ a:hover {
     left: 21rem;
 }
 
+.lang {
+    color: #FFFFFF;
+    padding: 0.35rem 0.65rem 0.35rem 0.65rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.pink {  /* Python, JSON */
+    background: #F734A9;
+}
+.orange { /* C#, JQuery */
+    background: #FF7E64;
+}
+.yellow {  /* CSS */
+    background: #FFEF57;
+}
+.green {  /* JavaScript */
+    background: #0AFF5D;
+}
+.blue {  /* Node.js, HTML, Unity */
+    background: #4BD8F9;
+}
+.purple { /* Kotlin, MongoDB */
+    background: #7E57FF;
+}
+
 .modal-desc {
     position: absolute;
     top: 12rem;
@@ -554,8 +580,26 @@ a:hover {
 
 .modal-links {
     position: absolute;
-    bottom: 1.5rem;
-    left: 20rem;
+    bottom: 0.75rem;
+    left: 19rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.link {
+    font-size: 2rem;
+    color: #FFFFFF;
+    border: 3px solid #141C3A;
+    padding: 0.25rem;
+    background: #141C3A;
+    border-radius: 50%;
+    transition: 0.35s all ease-in-out;
+}
+
+.link:hover {
+    color: #141C3A;
+    background: transparent;
 }
 
 .modal-visit {
