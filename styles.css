@@ -588,17 +588,18 @@ a:hover {
 .modal-links {
     position: absolute;
     bottom: 0.75rem;
-    left: 19rem;
+    left: 18.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .link {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #FFFFFF;
     border: 3px solid #141C3A;
-    padding: 0.25rem;
+    padding: 0.35rem;
+    margin-right: 0.75rem;
     background: #141C3A;
     border-radius: 50%;
     transition: 0.35s all ease-in-out;

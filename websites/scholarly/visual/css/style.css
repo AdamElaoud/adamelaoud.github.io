@@ -163,7 +163,8 @@
 }
 
 #article-details {
-
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .padded {
