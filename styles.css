@@ -40,6 +40,10 @@ a:hover {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* Cover ------------------------------------------------------------------------ */
 #cover {
     position: absolute;
@@ -629,6 +633,17 @@ a:hover {
 
 .red-icon:hover {
     color: #FF0000;
+    background: transparent;
+}
+
+.orange-icon {
+    color: #FFFFFF;
+    border: 3px solid #FF7E64;
+    background: #FF7E64;
+}
+
+.orange-icon:hover {
+    color: #FF7E64;
     background: transparent;
 }
 
