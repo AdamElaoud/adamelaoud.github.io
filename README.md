@@ -1,2 +1,3 @@
-# adamelaoud.github.io
-My personal portfolio website!
+# adamelaoud.com
+My personal portfolio website!  
+*currently undergoing major update*
