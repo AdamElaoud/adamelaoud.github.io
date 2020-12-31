@@ -54,6 +54,9 @@ Feel free to contact me with any questions!
         <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.6.3/css/all.css"
             integrity = "sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin = "anonymous">
 
+        <!-- Animate On Scroll 2.3.1 -->
+        <link rel = "stylesheet" href = "https://unpkg.com/aos@next/dist/aos.css" />
+
         <!-- Stylesheet -->
         <link rel = "stylesheet" href = "styles.css">
 
@@ -83,7 +86,8 @@ Feel free to contact me with any questions!
             <div class = "navbar">
                 <a class = "navbar-brand" href = "#">
                     <img id = "logo" src = "images/logos/logo-transparent-white.png">
-                    <span id = "brand">| ADAM ELAOUD</span>
+                    <span class = "vert-bar"></span>
+                    <span id = "brand">ADAM ELAOUD</span>
                 </a>
 
                 <div class = "navbar-text">
@@ -134,7 +138,7 @@ Feel free to contact me with any questions!
             </div>
 
             <!-- User Brag -->
-            <div id = "users" class = "section">
+            <div id = "users" class = "section" data-aos = "fade-up" data-aos-duration = "500">
                 <div id = "brag" class = "section-title">
                     Applications I've developed are serving
                     <br>
@@ -153,24 +157,27 @@ Feel free to contact me with any questions!
             <div id = "section-split"></div>
 
             <!-- Projects -->
-            <div id = "projects" class = "section">
+            <div id = "projects" class = "section" data-aos = "fade-up" data-aos-duration = "500">
                 <span id = "projects-title" class = "section-title">Some of my best projects</span>
 
                 <!-- categories -->
                 <div id = "categories" class = "centered-flex-row">
                     <div id = "website-category" class = "category" onclick = "typeChange(this)">
+                        <img id = "globe-colored" class = "colored category-icon" src = "images/icons/globe.png">
                         <img id = "globe" class = "category-icon" src = "images/icons/globe-gray.png">
                         <span class = "category-title">Websites</span>
                         <span class = "bar"></span>
                     </div>
 
                     <div id = "application-category" class = "category" onclick = "typeChange(this)">
-                        <img id = "laptop" class = "category-icon" src = "images/icons/laptop.png">
+                        <img id = "laptop-colored" class = "colored category-icon" src = "images/icons/laptop.png">
+                        <img id = "laptop" class = "category-icon" src = "images/icons/laptop-gray.png">
                         <span class = "category-title">Applications</span>
                         <span class = "bar"></span>
                     </div>
 
                     <div id = "game-category" class = "category" onclick = "typeChange(this)">
+                        <img id = "gamepad-colored" class = "colored category-icon" src = "images/icons/gamepad.png">
                         <img id = "gamepad" class = "category-icon" src = "images/icons/gamepad-gray.png">
                         <span class = "category-title">Games</span>
                         <span class = "bar"></span>
@@ -446,8 +453,9 @@ Feel free to contact me with any questions!
                             Just after beginning my web development journey, this was my first attempt at
                             building my personal website portfolio.
                             <br> <br>
-                            Featuring many aspects of web development, from this site I learned the basic
-                            fundamentals of interactive and responsive web development.
+                            From version 1.0, I learned the basic fundamentals of interactive and responsive
+                            web development. This solid foundation has enabled me to improve upon those skills
+                            to create the newer website you're currently on.
                         </span>
 
                         <div class = "modal-links">
@@ -608,7 +616,7 @@ Feel free to contact me with any questions!
                             twist.
                             <br> <br>
                             Detective Ink can only interact with objects whose color he shares.
-                            Hop, slide, and unlock your way through levels as you relax to the ambient
+                            Hop, slide, and unlock your way through levels as you relax to ambient
                             smooth jazz.
                         </span>
 
@@ -713,6 +721,9 @@ Feel free to contact me with any questions!
         <!-- Bootstrap 4.4.1 -->
         <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity = "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin = "anonymous"></script>
 
+        <!-- Animate On Scroll -->
+        <script src = "https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
         <!-- JavaScript -->
         <script type = "text/javascript" src = "index.js"></script>
     </body>

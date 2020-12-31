@@ -4,25 +4,21 @@ $(document).ready( () => {
     let year = date.getFullYear();
     document.getElementById("date").innerHTML = year
 
-    // sticky navbar -------------------------------------------------------------------------------------
-    let navbar = document.querySelector('.navbar');
-    let logo = document.getElementById("logo");
-    
-    // call on scroll
-    window.onscroll = () => { navScroll(navbar, logo); };
+    // sticky navbar -------------------------------------------------------------------------------------   
+    window.onscroll = () => { navScroll(); };
 
     // category hover ------------------------------------------------------------------------------------
     $("#website-category").hover(
         () => {
             $("#website-category .category-title").css("color", "#7E57FF");
             $("#website-category .bar").css("background-color", "#7E57FF");
-            $("#globe").attr("src", "images/icons/globe.png");
+            $("#globe-colored").css("opacity", "1");
         },
         () => {
             if (type !== "website") {
                 $("#website-category .category-title").css("color", "#000000");
                 $("#website-category .bar").css("background-color", "rgb(145,153,160, 0.5)");
-                $("#globe").attr("src", "images/icons/globe-gray.png");
+                $("#globe-colored").css("opacity", "0");
             }
         }
     );
@@ -31,13 +27,13 @@ $(document).ready( () => {
         () => {
             $("#application-category .category-title").css("color", "#7E57FF");
             $("#application-category .bar").css("background-color", "#7E57FF");
-            $("#laptop").attr("src", "images/icons/laptop.png");
+            $("#laptop-colored").css("opacity", "1");
         },
         () => {
             if (type !== "application") {
                 $("#application-category .category-title").css("color", "#000000");
                 $("#application-category .bar").css("background-color", "rgb(145,153,160, 0.5)");
-                $("#laptop").attr("src", "images/icons/laptop-gray.png");
+                $("#laptop-colored").css("opacity", "0");
             }
         }
     );
@@ -46,13 +42,13 @@ $(document).ready( () => {
         () => {
             $("#game-category .category-title").css("color", "#7E57FF");
             $("#game-category .bar").css("background-color", "#7E57FF");
-            $("#gamepad").attr("src", "images/icons/gamepad.png");
+            $("#gamepad-colored").css("opacity", "1");
         },
         () => {
             if (type !== "game") {
                 $("#game-category .category-title").css("color", "#000000");
                 $("#game-category .bar").css("background-color", "rgb(145,153,160, 0.5)");
-                $("#gamepad").attr("src", "images/icons/gamepad-gray.png");
+                $("#gamepad-colored").css("opacity", "0");
             }
         }
     );
@@ -70,19 +66,19 @@ function typeChange(ele) {
             $("#website-category .category-title").css("color", "#000000");
             $("#website-category .bar").css("background-color", "rgb(145,153,160, 0.5)");
             $(".website").css("display", "none");
-            $("#globe").attr("src", "images/icons/globe-gray.png");
+            $("#globe-colored").css("opacity", "0");
             break;
         case "game":
             $("#game-category .category-title").css("color", "#000000");
             $("#game-category .bar").css("background-color", "rgb(145,153,160, 0.5)");
             $(".game").css("display", "none");
-            $("#gamepad").attr("src", "images/icons/gamepad-gray.png");
+            $("#gamepad-colored").css("opacity", "0");
             break;
         case "application":
             $("#application-category .category-title").css("color", "#000000");
             $("#application-category .bar").css("background-color", "rgb(145,153,160, 0.5)");
             $(".application").css("display", "none");
-            $("#laptop").attr("src", "images/icons/laptop-gray.png");
+            $("#laptop-colored").css("opacity", "0");
             break;
     }
 
@@ -93,37 +89,37 @@ function typeChange(ele) {
             $("#website-category .category-title").css("color", "#7E57FF");
             $("#website-category .bar").css("background-color", "#7E57FF");
             $(".website").css("display", "flex");
-            $("#globe").attr("src", "images/icons/globe.png");
+            $("#globe-colored").css("opacity", "1");
             break;
         case "game-category":
             type = "game";
             $("#game-category .category-title").css("color", "#7E57FF");
             $("#game-category .bar").css("background-color", "#7E57FF");
             $(".game").css("display", "flex");
-            $("#gamepad").attr("src", "images/icons/gamepad.png");
+            $("#gamepad-colored").css("opacity", "1");
             break;
         case "application-category":
             type = "application";
             $("#application-category .category-title").css("color", "#7E57FF");
             $("#application-category .bar").css("background-color", "#7E57FF");
             $(".application").css("display", "flex");
-            $("#laptop").attr("src", "images/icons/laptop.png");
+            $("#laptop-colored").css("opacity", "1");
             break;
     }
 }
 
 // navScroll onClick function ----------------------------------------------------------------------------
-function navScroll(navbar, logo) {
+function navScroll() {
     if (window.pageYOffset > 0) {
-        navbar.classList.add("stuck");
-        navbar.classList.add("white-nav");
-        logo.src = "images/logos/logo-transparent-purple.png";
+        $(".navbar").addClass("stuck");
+        $(".vert-bar").addClass("vert-bar-purple");
+        $("#logo").attr("src", "images/logos/logo-transparent-purple.png");
         $("#nav-icons").css("display", "flex");
 
     } else {
-        navbar.classList.remove("stuck");
-        navbar.classList.remove("white-nav");
-        logo.src = "images/logos/logo-transparent-white.png";
+        $(".navbar").removeClass("stuck");
+        $(".vert-bar").removeClass("vert-bar-purple");
+        $("#logo").attr("src", "images/logos/logo-transparent-white.png");
         $("#nav-icons").css("display", "none");
     }
 }
@@ -131,14 +127,15 @@ function navScroll(navbar, logo) {
 // enter onClick function --------------------------------------------------------------------------------
 function enter() {
     // load website
-    let siteContent = document.getElementById("site-content");
     $("#site-content").css("display", "block");
-    siteContent.classList.add("fade-in");
+    $("#site-content").addClass("fade-in");
 
     // fade out cover
-    let cover = document.getElementById("cover");
-    cover.classList.add("fade-out");
+    $("#cover").addClass("fade-out");
 
-    // remove cover
+    // remove cover after waiting for fade out to complete
     setTimeout( () => { $("#cover").css("display", "none"); }, 2000);
+
+    // init Animate On Scroll
+    AOS.init();
 }
