@@ -3,7 +3,7 @@
 }
 
 body {
-    background: #f9f9f9;
+    background: #F9F9F9;
 }
 
 a {
@@ -29,7 +29,7 @@ a:hover {
 }
 
 .section {
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 .gradient {
@@ -37,11 +37,22 @@ a:hover {
 }
 
 .shadow {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2) !important;
 }
 
 .bold {
     font-weight: bold;
+}
+
+/* Scrollbar ------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 15px;
+    border-left: 1px
+    solid #E6ECF8;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #141C3A;
 }
 
 /* Cover ------------------------------------------------------------------------ */
@@ -131,11 +142,16 @@ a:hover {
     background: transparent;
     width: 100vw;
     height: 5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
+    padding: 0;
+    margin-left: 1rem;
 }
 
 #brand {
@@ -149,6 +165,7 @@ a:hover {
 
 .navbar-text {
     margin-right: 2rem;
+    padding: 0;
 }
 
 .stuck {
@@ -156,6 +173,7 @@ a:hover {
     top: 0;
     z-index: 2;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    height: 3.75rem;
 }
 
 .white-nav {
@@ -206,22 +224,13 @@ a:hover {
     color: #7E57FF;
 	border: 1px solid #7E57FF;
     font-size: 1.15rem;
-    padding: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .nav-icon:hover {
     color: #FFFFFF;
     background: #7E57FF;
-}
-
-.nav-icon-shift {
-    color: #FFFFFF;
-	border: 1px solid #FFFFFF;
-}
-
-.nav-icon-shift:hover {
-    color: #7E57FF;
-    background: #FFFFFF;
 }
 
 /* Hero ------------------------------------------------------------------------ */
@@ -259,11 +268,29 @@ a:hover {
     margin-top: 3rem;
 }
 
+.icon-combo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero-icon {
     font-size: 1.75rem;
     padding: 2rem;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
+}
+
+.hero-icon-title {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: 0.35s all ease-in-out;
+}
+
+.hero-icon:hover + .hero-icon-title {
+    opacity: 1;
 }
 
 /* Users ------------------------------------------------------------------------ */
@@ -300,6 +327,15 @@ a:hover {
     height: 2.5rem;
 }
 
+/* Section Split ------------------------------------------------------------------- */
+#section-split {
+    width: 85vw;
+    height: 2px;
+    background: #E6ECF8;
+    margin: auto;
+    margin-top: 4rem;
+}
+
 /* Projects ------------------------------------------------------------------------ */
 #projects {
     display: flex;
@@ -308,8 +344,13 @@ a:hover {
     font-size: 1.5rem;
 }
 
+#projects-title {
+    font-size: 2.5rem;
+}
+
 #categories {
-    margin-top: 3rem;
+    margin-top: 5rem;
+    position: relative;
 }
 
 .category {
