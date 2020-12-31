@@ -610,6 +610,28 @@ a:hover {
     background: transparent;
 }
 
+.yellow-icon {
+    color: #FFFFFF;
+    border: 3px solid #EBD93F;
+    background: #EBD93F;
+}
+
+.yellow-icon:hover {
+    color: #EBD93F;
+    background: transparent;
+}
+
+.red-icon {
+    color: #FFFFFF;
+    border: 3px solid #FF0000;
+    background: #FF0000;
+}
+
+.red-icon:hover {
+    color: #FF0000;
+    background: transparent;
+}
+
 .modal-visit {
     position: absolute;
     bottom: 0.75rem;
