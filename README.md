@@ -1,3 +1,2 @@
 # adamelaoud.com
-My personal portfolio website!  
-*currently undergoing major update*
+My personal portfolio website!
