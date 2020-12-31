@@ -10,10 +10,6 @@ $(document).ready( () => {
     
     // call on scroll
     window.onscroll = () => { navScroll(navbar, logo); };
-
-    // modal X button image swap -------------------------------------------------------------------------
-    $(".close-icon").mouseover( () => { $(".close-icon").attr("src", "images/icons/x transparent.png"); } );
-    $(".close-icon").mouseleave( () => { $(".close-icon").attr("src", "images/icons/x.png"); } );
 });
 
 // category selection onClick function -------------------------------------------------------------------

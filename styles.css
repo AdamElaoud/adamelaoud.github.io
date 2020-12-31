@@ -488,14 +488,14 @@ a:hover {
     font-size: 2.5rem;
     position: absolute;
     left: 21rem;
-    top: 4rem;
+    top: 5rem;
 }
 
 .modal-icon {
     position: absolute;
     z-index: 1;
     left: 14.5rem;
-    top: 3rem;
+    top: 4rem;
     width: 6rem;
     border-radius: 50%;
 }
@@ -517,9 +517,16 @@ a:hover {
     background: transparent;
 }
 
-.close-icon {
+.close-icon, .close-icon-hover {
+    position: absolute;
+    left: -1.5rem;
     width: 2rem;
     height: 2rem;
+    transition: 0.35s all ease-in-out;
+}
+
+.close-icon:hover {
+    opacity: 0;
 }
 
 .modal-close:hover {
@@ -534,13 +541,13 @@ a:hover {
     position: absolute;
     width: 17.5rem;
     height: 100%;
-    left: 0;
+    left: -0.1rem;
     top: 0;
 }
 
 .modal-languages {
     position: absolute;
-    top: 8rem;
+    top: 9rem;
     left: 21rem;
 }
 
@@ -554,14 +561,14 @@ a:hover {
 .pink {  /* Python, JSON */
     background: #F734A9;
 }
-.orange { /* C#, JQuery */
+.orange { /* C#, JavaScript */
     background: #FF7E64;
 }
 .yellow {  /* CSS */
-    background: #FFEF57;
+    background: #FAE94D;
 }
-.green {  /* JavaScript */
-    background: #0AFF5D;
+.green {  /* JQuery */
+    background: #0ADf51;
 }
 .blue {  /* Node.js, HTML, Unity */
     background: #4BD8F9;
@@ -572,7 +579,7 @@ a:hover {
 
 .modal-desc {
     position: absolute;
-    top: 12rem;
+    top: 13rem;
     left: 21rem;
     font-size: 1.15rem;
     width:25.5rem;
