@@ -77,14 +77,14 @@ a:hover {
 #cover-logo {
     position: relative;
     width: 10rem;
-    animation: down 4s 1;
+    animation: down 3s 1;
 }
 
 #cover-name {
     position: relative;
     font-size: 2rem;
     margin-top: 1rem;
-    animation: left 4s 1;
+    animation: left 3s 1;
 }
 
 #cover-button {
@@ -97,7 +97,7 @@ a:hover {
     background: transparent;
     border-radius: 3rem;
     transition: 0.25s all ease-in-out;
-    animation: up 4s 1;
+    animation: up 3s 1;
 }
 
 #cover-button:hover {
