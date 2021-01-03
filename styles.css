@@ -1066,6 +1066,11 @@ a:hover {
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
+
+    /* Footer -------------------------------------------------------------------- */
+    #handcrafted {
+        font-size: 0.75rem;
+    }
 }
 
 /* PC Adjustments */
