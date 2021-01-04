@@ -904,6 +904,7 @@ a:hover {
     /* Projects -------------------------------------------------------------------- */
     #projects-title {
         font-size: 1.75rem;
+        text-align: center;
     }
     
     #categories {
@@ -1030,7 +1031,8 @@ a:hover {
         top: 5.25rem;
         left: 11.25rem;
         font-size: 0.75rem;
-        width: 10.85rem;
+        width: 50%;
+        margin-right: 11rem;
     }
 
     .gap {
