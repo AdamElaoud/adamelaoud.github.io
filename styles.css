@@ -1,3 +1,13 @@
+@font-face {font-family: "Europa";
+    /* font files from http://www.onlinewebfonts.com */
+    src: url("/fonts/europa\ IE9.eot"); /* IE9*/
+    src: url("fonts/europa\ IE6\ -\ IE8.eot") format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/europa\ chrome\ firefox.woff2") format("woff2"), /* chrome firefox */
+    url("fonts/europa\ chrome\ firefox.woff") format("woff"), /* chrome firefox */
+    url("fonts/europa\ truetype.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("fonts/europa\ iOS.svg") format("svg"); /* iOS 4.1- */
+}
+
 * {
     font-family: "Nunito", sans-serif;
 }
