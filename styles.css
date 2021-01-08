@@ -838,6 +838,23 @@ a:hover {
         display: none;
     }
 
+    /* Cover --------------------------------------------------------------------- */
+    #cover-logo {
+        width: 7rem;
+        animation: down 3s 1;
+    }
+    
+    #cover-name {
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        animation: left 3s 1;
+    }
+    
+    #cover-button {
+        font-size: 1rem;
+        padding: 0.35rem 2rem 0.35rem 2rem;
+    }
+
     /* Navbar -------------------------------------------------------------------- */
     #brand {
         font-size: 1rem;
